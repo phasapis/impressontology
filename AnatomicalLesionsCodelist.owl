@@ -1,0 +1,170 @@
+@prefix : <http://fp7-impress.eu/IMPRESSOntology/skos/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix imprSkos: <http://fp7-impress.eu/IMPRESSOntology/skos/> .
+@base <http://fp7-impress.eu/IMPRESSOntology/skos/> .
+
+<http://fp7-impress.eu/IMPRESSOntology/skos/> rdf:type owl:Ontology ;
+                                              
+                                              owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://fp7-impress.eu/IMPRESSOntology/AnatomicalLesions
+
+<http://fp7-impress.eu/IMPRESSOntology/AnatomicalLesions> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
+
+###  http://fp7-impress.eu/IMPRESSOntology/skos/AirwayObstruction
+
+:AirwayObstruction rdf:type owl:NamedIndividual ,
+                            <http://www.w3.org/2004/02/skos/core#Concept> ;
+                   
+                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Airway Obstruction"@en .
+
+
+
+###  http://fp7-impress.eu/IMPRESSOntology/skos/Atelectasia
+
+:Atelectasia rdf:type owl:NamedIndividual ,
+                      <http://www.w3.org/2004/02/skos/core#Concept> ;
+             
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Atelectasia"@en .
+
+
+
+###  http://fp7-impress.eu/IMPRESSOntology/skos/BluntLesion
+
+:BluntLesion rdf:type owl:NamedIndividual ,
+                      <http://www.w3.org/2004/02/skos/core#Concept> ;
+             
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Blunt Lesion"@en ;
+             
+             rdfs:comment "blunt lesion/contusion of the chest wall"@en .
+
+
+
+###  http://fp7-impress.eu/IMPRESSOntology/skos/Burn
+
+:Burn rdf:type owl:NamedIndividual ,
+               <http://www.w3.org/2004/02/skos/core#Concept> ;
+      
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Burn"@en .
+
+
+
+###  http://fp7-impress.eu/IMPRESSOntology/skos/CloseFracture
+
+:CloseFracture rdf:type owl:NamedIndividual ,
+                        <http://www.w3.org/2004/02/skos/core#Concept> ;
+               
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Close Fracture"@en .
+
+
+
+###  http://fp7-impress.eu/IMPRESSOntology/skos/ConcussionBrain
+
+:ConcussionBrain rdf:type owl:NamedIndividual ,
+                          <http://www.w3.org/2004/02/skos/core#Concept> ;
+                 
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Concussion Brain"@en ;
+                 
+                 rdfs:comment "concussion/contusion of the brain"@en .
+
+
+
+###  http://fp7-impress.eu/IMPRESSOntology/skos/ContusionNeck
+
+:ContusionNeck rdf:type owl:NamedIndividual ,
+                        <http://www.w3.org/2004/02/skos/core#Concept> ;
+               
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Contusion of neck"@en .
+
+
+
+###  http://fp7-impress.eu/IMPRESSOntology/skos/ContusionOfFaceScalp
+
+:ContusionOfFaceScalp rdf:type owl:NamedIndividual ,
+                               <http://www.w3.org/2004/02/skos/core#Concept> ;
+                      
+                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Contusion of face scalp"@en .
+
+
+
+###  http://fp7-impress.eu/IMPRESSOntology/skos/DiaphragmLesions
+
+:DiaphragmLesions rdf:type owl:NamedIndividual ,
+                           <http://www.w3.org/2004/02/skos/core#Concept> ;
+                  
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Diaphragm Lesions"@en .
+
+
+
+###  http://fp7-impress.eu/IMPRESSOntology/skos/Edema
+
+:Edema rdf:type owl:NamedIndividual ,
+                <http://www.w3.org/2004/02/skos/core#Concept> ;
+       
+       <http://www.w3.org/2004/02/skos/core#prefLabel> "Edema"@en .
+
+
+
+###  http://fp7-impress.eu/IMPRESSOntology/skos/Ematomi
+
+:Ematomi rdf:type owl:NamedIndividual ,
+                  <http://www.w3.org/2004/02/skos/core#Concept> ;
+         
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Ematomi"@en .
+
+
+
+###  http://fp7-impress.eu/IMPRESSOntology/skos/Epistaxis
+
+:Epistaxis rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Epistaxis"@en .
+
+
+
+###  http://fp7-impress.eu/IMPRESSOntology/skos/ExternalBleeding
+
+:ExternalBleeding rdf:type owl:NamedIndividual ,
+                           <http://www.w3.org/2004/02/skos/core#Concept> ;
+                  
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "External Bleeding"@en .
+
+
+
+###  http://fp7-impress.eu/IMPRESSOntology/skos/ForeignBody
+
+:ForeignBody rdf:type owl:NamedIndividual ,
+                      <http://www.w3.org/2004/02/skos/core#Concept> ;
+             
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Foreign Body"@en .
+
+
+
+###  http://fp7-impress.eu/IMPRESSOntology/skos/FractureOfPelvis
+
+:FractureOfPelvis rdf:type owl:NamedIndividual ,
+                           <http://www.w3.org/2004/02/skos/core#Concept> ;
+                  
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Fracture of Pelvis"@en .
+
+
+
+
+###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
+

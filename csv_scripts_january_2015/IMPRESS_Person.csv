@@ -1,0 +1,137 @@
+Code,Code of parent class,Label,Description
+P,,IMPRESS Person,A single individual
+P1,P,Responders,
+P1.1,P1,Roles,A survivor of an EOPHC
+P1.1.1,P1.1,Incident coordination,The upper level coordination roles that a person may have during an emergency 
+P1.1.1.1,P1.1.1,Information officer,
+P1.1.1.2,P1.1.1,Liaison officer,
+P1.1.1.3,P1.1.1,Safety Officer,
+P1.1.1.4,P1.1.1,Incident coordination  level 2,The lower lever coordination roles that a person may have during an emergency
+P1.1.1.4.1,P1.1.1.4,Operation commnader,
+P1.1.1.4.2,P1.1.1.4,Planning officer,
+P1.1.1.4.3,P1.1.1.4,Logistics officer,
+P1.1.1.4.4,P1.1.1.4,Administration  officer,The indicators of the person’s health state
+P1.1.1.4.5,P1.1.1.4,Community  Relation officer,The roles that a person may have during an emergency 
+P1.2,P1,Command Group on scene,"In complex incidents or incidents over an extended time, a place of command is established from which this group can coordinate the operation."
+P1.2.1,P1.2,Medical Incident Commander,
+P1.2.2,P1.2,Police Incident Commander,
+P1.2.3,P1.2,Rescue Incident Commander,
+P2,P,Affected,A single individual which is affected by an EOPHC
+P2.1,P2,Humans,
+P2.1.1,P2.1,Survivors,
+P2.1.1.1,P2.1.1,Non injured,
+P2.1.1.1.1,P2.1.1.1,Non injured victims,Usually accompany injured patients. A special area must be prepared for these victims with access to psychological support staff and information. Voluntary organizations are very useful.
+P2.1.1.2,P2.1.1,Injured,"Injured person can be described by ICD10-ICECI. Please, provide a range of codes."
+P2.1.1.2.1,P2.1.1.2,First Aid Injury,
+P2.1.1.2.2,P2.1.1.2,Lost time injury,
+P2.1.1.2.3,P2.1.1.2,Medical treatment injury,
+P2.1.1.2.4,P2.1.1.2,Severely injured patient,"Transported by ambulance, helicopter, car, relatives or other means. Taken care of by trauma teams, that usually consist of two or three physicians and three or four nurses, responsible for different functions"
+P2.1.1.2.5,P2.1.1.2,Less severely injured patients,"Usually come by ambulance, car, relatives or walking: must be carefully examined by doctor and nurse. Cannot be sent home, also because of psychological trauma, may be admitted to wards for further medical treatment. Must meet psychological support operators"
+P2.1.1.2.6,P2.1.1.2,Expectant,"Blue tag, T4: this category is activated in case of MCS: the patients with low survival probability or who are beyond the scope of survival receive only palliative care. They are not treated non transported."
+P2.1.1.2.6,P2.1.1.2,Health Status,
+P2.1.1.2.6.1,P2.1.1.2.6,Physiological Lesions,Physiological injuries resulting from anatomical lesions
+P2.1.1.2.6.1.1,P2.1.1.2.6.1,airway blocked,
+P2.1.1.2.6.1.2,P2.1.1.2.6.1,dispnea,
+P2.1.1.2.6.1.3,P2.1.1.2.6.1,metabolic acidosis,
+P2.1.1.2.6.1.4,P2.1.1.2.6.1,cianosis/hypoxemia,
+P2.1.1.2.6.1.5,P2.1.1.2.6.1,hypoxemia,
+P2.1.1.2.6.1.6,P2.1.1.2.6.1,respiratori depression,
+P2.1.1.2.6.1.7,P2.1.1.2.6.1,resrespiratory acidosisacidosis ,
+P2.1.1.2.6.1.8,P2.1.1.2.6.1,rise in pleural pressure,
+P2.1.1.2.6.1.9,P2.1.1.2.6.1,Ventilatory impairment,
+P2.1.1.2.6.1.10,P2.1.1.2.6.1,flail chest,
+P2.1.1.2.6.1.11,P2.1.1.2.6.1,ARDS,
+P2.1.1.2.6.1.12,P2.1.1.2.6.1,abdominal compartment syndrome,
+P2.1.1.2.6.1.13,P2.1.1.2.6.1,acute  compartment syndrome,
+P2.1.1.2.6.1.14,P2.1.1.2.6.1,cardiogenic shock,
+P2.1.1.2.6.1.15,P2.1.1.2.6.1,circulatory shock,
+P2.1.1.2.6.1.16,P2.1.1.2.6.1,mediastinal vein compression,compression of the mediastinal vein
+P2.1.1.2.6.1.17,P2.1.1.2.6.1,internal organs damage,damage of internal organs
+P2.1.1.2.6.1.18,P2.1.1.2.6.1,pelvic organs damage,damage of pelvic organs
+P2.1.1.2.6.1.19,P2.1.1.2.6.1,volume decrease,decrease in circulatory volume
+P2.1.1.2.6.1.20,P2.1.1.2.6.1,disidratation,
+P2.1.1.2.6.1.21,P2.1.1.2.6.1,heart failure,
+P2.1.1.2.6.1.22,P2.1.1.2.6.1,hypotension,
+P2.1.1.2.6.1.23,P2.1.1.2.6.1,mediastinal pressure,rise in mediastinal pressure
+P2.1.1.2.6.1.24,P2.1.1.2.6.1,brain deficit,
+P2.1.1.2.6.1.25,P2.1.1.2.6.1,CAD,Cervical acceleration-deceleration (CAD)
+P2.1.1.2.6.1.26,P2.1.1.2.6.1,rise in intracranial pressure,
+P2.1.1.2.6.1.27,P2.1.1.2.6.1,burne shock,
+P2.1.1.2.6.1.28,P2.1.1.2.6.1,periferic edema,
+P2.1.1.2.6.1.29,P2.1.1.2.6.1,functional loss of the limb,
+P2.1.1.2.6.1.30,P2.1.1.2.6.1,hypotermia,
+P2.1.1.2.6.1.31,P2.1.1.2.6.1,loss of vision,
+P2.1.1.2.6.1.32,P2.1.1.2.6.1,motor deficits,
+P2.1.1.2.6.1.33,P2.1.1.2.6.1,paralysis,
+P2.1.1.2.6.1.34,P2.1.1.2.6.1,toxic contamination,contamination by toxic substance/radiation
+P2.1.1.2.6.2,P2.1.1.2.6,Anatomical  Lesions,Any anatomical lesion resulting from trauma
+P2.1.1.2.6.2.1,P2.1.1.2.6.2,airway obstruction,
+P2.1.1.2.6.2.2,P2.1.1.2.6.2,material,"blood, secretion, aspirated gastrointestinal content, dislocated teeth or dental protheses, or foreign material"
+P2.1.1.2.6.2.3,P2.1.1.2.6.2,edema,Is this the same as P2.1.1.2.6.2.7 ?
+P2.1.1.2.6.2.4,P2.1.1.2.6.2,retracted tongue,retracted tongue cused by reduced muscular tension in unconscious patient
+P2.1.1.2.6.2.5,P2.1.1.2.6.2,epistaxis,
+P2.1.1.2.6.2.6,P2.1.1.2.6.2,concussion brain,concussion/contusion brain
+P2.1.1.2.6.2.7,P2.1.1.2.6.2,edema,
+P2.1.1.2.6.2.8,P2.1.1.2.6.2,hemorrhage,"Subarachnoid, subdural, and extradural hemorrhage"
+P2.1.1.2.6.2.9,P2.1.1.2.6.2,ematomi,
+P2.1.1.2.6.2.10,P2.1.1.2.6.2,respiratorycenter injury,injury to the respiratorycenter of the brain
+P2.1.1.2.6.2.11,P2.1.1.2.6.2,"Contusion of face, scalp",
+P2.1.1.2.6.2.12,P2.1.1.2.6.2,foreign body,
+P2.1.1.2.6.2.13,P2.1.1.2.6.2,Contusion neck ,
+P2.1.1.2.6.2.14,P2.1.1.2.6.2,tracheal lesion,tracheal lesion/emphisema (Classificazione di Schaefer Fuhrman)
+P2.1.1.2.6.2.15,P2.1.1.2.6.2,blunt lesion,blunt lesion/contusion of the chest wall
+P2.1.1.2.6.2.16,P2.1.1.2.6.2,multiple rib fracture,
+P2.1.1.2.6.2.17,P2.1.1.2.6.2,lungs injuries,injuries (bleeding/air leaking) of the lungs
+P2.1.1.2.6.2.18,P2.1.1.2.6.2,hemothorax,
+P2.1.1.2.6.2.19,P2.1.1.2.6.2,pneumothorax,
+P2.1.1.2.6.2.20,P2.1.1.2.6.2,tension pneumothorax ,
+P2.1.1.2.6.2.21,P2.1.1.2.6.2,diaphragm lesions,
+P2.1.1.2.6.2.22,P2.1.1.2.6.2,pericardial fluid/tamponation,
+P2.1.1.2.6.2.23,P2.1.1.2.6.2,valavular lesions,
+P2.1.1.2.6.2.24,P2.1.1.2.6.2,lung toxic injury,lung injury caused by toxic gases
+P2.1.1.2.6.2.25,P2.1.1.2.6.2,vertebral column trauma,trauma of the vertebral column
+P2.1.1.2.6.2.26,P2.1.1.2.6.2,spinal lesion,
+P2.1.1.2.6.2.27,P2.1.1.2.6.2,penetrating wound,
+P2.1.1.2.6.2.28,P2.1.1.2.6.2,internal blingeed,
+P2.1.1.2.6.2.29,P2.1.1.2.6.2,Injury to spleen,
+P2.1.1.2.6.2.30,P2.1.1.2.6.2,external bleeding,
+P2.1.1.2.6.2.31,P2.1.1.2.6.2,Fracture of pelvis,
+P2.1.1.2.6.2.32,P2.1.1.2.6.2,limb fracture,
+P2.1.1.2.6.2.33,P2.1.1.2.6.2,open fracture,
+P2.1.1.2.6.2.34,P2.1.1.2.6.2,close fracture,
+P2.1.1.2.6.2.35,P2.1.1.2.6.2,respiratory center injury,injury to the respiratory center caused by shock or lack of oxygen
+P2.1.1.2.6.2.36,P2.1.1.2.6.2,atelectasia,
+P2.1.1.2.6.2.37,P2.1.1.2.6.2,heart insufficiency,
+P2.1.1.2.6.2.38,P2.1.1.2.6.2,tachycardia,"supraventricular and ventricular tachycardia, flutter or ventricular fibrillation"
+P2.1.1.2.6.2.39,P2.1.1.2.6.2,burn,
+P2.1.1.2.6.2.40,P2.1.1.2.6.2,Radiation effect,"Effect of radiation, unspecified"
+P2.1.1.2.6.2.41,P2.1.1.2.6.2,drowning syndrome,
+P2.1.1.2.6.2.42,P2.1.1.2.6.2,heat shock,
+P2.1.1.2.6.2.43,P2.1.1.2.6.2,inalation of smoke,
+P2.1.1.2.6.3,P2.1.1.2.6,State indicators,"The state indicators can be given by the ICF? Please, provide a range of codes, if possible"
+P2.1.1.2.6.3.1,P2.1.1.2.6.3,S.T.A.R.T. Triage,
+P2.1.1.2.6.3.1.1,P2.1.1.2.6.3.1,Deambulation,
+P2.1.1.2.6.3.1.2,P2.1.1.2.6.3.1,breathing,
+P2.1.1.2.6.3.1.3,P2.1.1.2.6.3.1,breaths per minute,
+P2.1.1.2.6.3.1.4,P2.1.1.2.6.3.1,Radial wrist,
+P2.1.1.2.6.3.1.5,P2.1.1.2.6.3.1,collaboration,
+P2.1.1.2.6.3.2,P2.1.1.2.6.3,F.A.S.T. Triage,
+P2.1.1.2.6.3.2.1,P2.1.1.2.6.3.2,Airway,
+P2.1.1.2.6.3.2.2,P2.1.1.2.6.3.2,respiratory rate,
+P2.1.1.2.6.3.2.3,P2.1.1.2.6.3.2,oximetry device,
+P2.1.1.2.6.3.2.4,P2.1.1.2.6.3.2,ipoventilation,
+P2.1.1.2.6.3.2.5,P2.1.1.2.6.3.2,heart rate,
+P2.1.1.2.6.3.2.6,P2.1.1.2.6.3.2,blood pressure,
+P2.1.1.2.6.3.2.7,P2.1.1.2.6.3.2,presence of hemorrhage,
+P2.1.1.2.6.3.2.8,P2.1.1.2.6.3.2,Glasgow Coma Scale,
+P2.1.1.3,P2.1.1.2.6,Contaminated,
+P2.1.1.3.1,P2.1.1.3,Skin,
+P2.1.1.3.2,P2.1.1.3,Respiratory,
+P2.1.1.3.3,P2.1.1.3,Eyes,
+P2.1.1.3.4,P2.1.1.3,GI tract,
+P2.1.2,P2.1,Dead,
+P2.1.2.1,P2.1.2,Dead victims,Must be transferred to a prepared area
+P2.2,P2,Animals,An animal that may be affected by an EOPHC
+P2.2.1,P2.2,Pets,
+P2.2.2,P2.2,Productive,
+P2.2.3,P2.2,Zoo,

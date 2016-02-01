@@ -1,0 +1,410 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY imprActivity "http://fp7-impress.eu/Activity/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://fp7-impress.eu/Activity/"
+     xml:base="http://fp7-impress.eu/Activity/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:imprActivity="http://fp7-impress.eu/Activity/">
+    <owl:Ontology>
+        <owl:imports rdf:resource="http://fp7-impress.eu/Activity/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/Assembling -->
+
+    <owl:Class rdf:about="&imprActivity;Assembling">
+        <rdfs:label>Assembling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;SurvivorsManagement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/Black -->
+
+    <owl:Class rdf:about="&imprActivity;Black">
+        <rdfs:label>Black</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;Triage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/CBRNE -->
+
+    <owl:Class rdf:about="&imprActivity;CBRNE">
+        <rdfs:label>CBRNE</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;IMPRESSActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/Communication -->
+
+    <owl:Class rdf:about="&imprActivity;Communication">
+        <rdfs:label>Communication</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;IMPRESSActivity"/>
+        <rdfs:comment>Any kind of communication that takes place during an activity</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/CrowdControl -->
+
+    <owl:Class rdf:about="&imprActivity;CrowdControl">
+        <rdfs:label>CrowdControl</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;SurvivorsManagement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/EmergencyDepartment -->
+
+    <owl:Class rdf:about="&imprActivity;EmergencyDepartment">
+        <rdfs:label>EmergencyDepartment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;Hospital"/>
+        <rdfs:comment>Could we provide more categories/values?</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/Evacuation -->
+
+    <owl:Class rdf:about="&imprActivity;Evacuation">
+        <rdfs:label>Evacuation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;SurvivorsManagement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/Field -->
+
+    <owl:Class rdf:about="&imprActivity;Field">
+        <rdfs:label>Field</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;MedicalServices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/FireExtinguishing -->
+
+    <owl:Class rdf:about="&imprActivity;FireExtinguishing">
+        <rdfs:label>FireExtinguishing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;FireServices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/FireServices -->
+
+    <owl:Class rdf:about="&imprActivity;FireServices">
+        <rdfs:label>FireServices</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;RescueServices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/FirstAidServices -->
+
+    <owl:Class rdf:about="&imprActivity;FirstAidServices">
+        <rdfs:label>FirstAidServices</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;Field"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/Green -->
+
+    <owl:Class rdf:about="&imprActivity;Green">
+        <rdfs:label>Green</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;Triage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/HamradioVolunteers -->
+
+    <owl:Class rdf:about="&imprActivity;HamradioVolunteers">
+        <rdfs:label>HamradioVolunteers</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;Communication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/Hospital -->
+
+    <owl:Class rdf:about="&imprActivity;Hospital">
+        <rdfs:label>Hospital</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;IMPRESSActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/Internet -->
+
+    <owl:Class rdf:about="&imprActivity;Internet">
+        <rdfs:label>Internet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;Communication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/LifeSavingInterventions -->
+
+    <owl:Class rdf:about="&imprActivity;LifeSavingInterventions">
+        <rdfs:label>LifeSavingInterventions</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;Field"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/MassDecontamination -->
+
+    <owl:Class rdf:about="&imprActivity;MassDecontamination">
+        <rdfs:label>MassDecontamination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;CBRNE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/Medical -->
+
+    <owl:Class rdf:about="&imprActivity;Medical">
+        <rdfs:label>Medical</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;RescueServices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/MedicalServices -->
+
+    <owl:Class rdf:about="&imprActivity;MedicalServices">
+        <rdfs:label>MedicalServices</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;IMPRESSActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/Mobile -->
+
+    <owl:Class rdf:about="&imprActivity;Mobile">
+        <rdfs:label>Mobile</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;Communication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/Phone -->
+
+    <owl:Class rdf:about="&imprActivity;Phone">
+        <rdfs:label>Phone</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;Mobile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/Police -->
+
+    <owl:Class rdf:about="&imprActivity;Police">
+        <rdfs:label>Police</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;CrowdControl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/PsychologicalSupportTeams -->
+
+    <owl:Class rdf:about="&imprActivity;PsychologicalSupportTeams">
+        <rdfs:label>PsychologicalSupportTeams</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;Medical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/Red -->
+
+    <owl:Class rdf:about="&imprActivity;Red">
+        <rdfs:label>Red</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;Triage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/RemovingObstacles -->
+
+    <owl:Class rdf:about="&imprActivity;RemovingObstacles">
+        <rdfs:label>RemovingObstacles</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;FireServices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/RescueServices -->
+
+    <owl:Class rdf:about="&imprActivity;RescueServices">
+        <rdfs:label>RescueServices</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;IMPRESSActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/SocialNetworks -->
+
+    <owl:Class rdf:about="&imprActivity;SocialNetworks">
+        <rdfs:label>SocialNetworks</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;Internet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/SpecialRescueTeams -->
+
+    <owl:Class rdf:about="&imprActivity;SpecialRescueTeams">
+        <rdfs:label>SpecialRescueTeams</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;RemovingObstacles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/SurvivorsManagement -->
+
+    <owl:Class rdf:about="&imprActivity;SurvivorsManagement">
+        <rdfs:label>SurvivorsManagement</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;IMPRESSActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/TETRA -->
+
+    <owl:Class rdf:about="&imprActivity;TETRA">
+        <rdfs:label>TETRA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;Mobile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/Telephone -->
+
+    <owl:Class rdf:about="&imprActivity;Telephone">
+        <rdfs:label>Telephone</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;Communication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/TherapeuticManoeuvres -->
+
+    <owl:Class rdf:about="&imprActivity;TherapeuticManoeuvres">
+        <rdfs:label>TherapeuticManoeuvres</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;Field"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/Transportation -->
+
+    <owl:Class rdf:about="&imprActivity;Transportation">
+        <rdfs:label>Transportation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;RescueServices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/TransportationToFieldMedicalFacilities -->
+
+    <owl:Class rdf:about="&imprActivity;TransportationToFieldMedicalFacilities">
+        <rdfs:label>TransportationToFieldMedicalFacilities</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;Transportation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/Triage -->
+
+    <owl:Class rdf:about="&imprActivity;Triage">
+        <rdfs:label>Triage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;Medical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/VictimRetruction -->
+
+    <owl:Class rdf:about="&imprActivity;VictimRetruction">
+        <rdfs:label>VictimRetruction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;FireServices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/White -->
+
+    <owl:Class rdf:about="&imprActivity;White">
+        <rdfs:label>White</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;Triage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/Yellow -->
+
+    <owl:Class rdf:about="&imprActivity;Yellow">
+        <rdfs:label>Yellow</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;Triage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/Antidote/specialMedicationProvision -->
+
+    <owl:Class rdf:about="&imprActivity;Antidote/specialMedicationProvision">
+        <rdfs:label>Antidote/specialMedicationProvision</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;CBRNE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/ExtremeRescue(heightsAndDepths) -->
+
+    <owl:Class rdf:about="&imprActivity;ExtremeRescue(heightsAndDepths)">
+        <rdfs:label>ExtremeRescue(heightsAndDepths)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;SpecialRescueTeams"/>
+    </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/NationalEmergencyTv/radioChannel -->
+
+    <owl:Class rdf:about="&imprActivity;NationalEmergencyTv/radioChannel">
+        <rdfs:label>NationalEmergencyTv/radioChannel</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&imprActivity;Communication"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

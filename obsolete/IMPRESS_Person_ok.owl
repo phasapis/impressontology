@@ -1,0 +1,597 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+     <!ENTITY imprPerson "http://fp7-impress.eu/Person/" >
+     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+]>
+
+<rdf:RDF xmlns="http://fp7-impress.eu/Person/"
+     xml:base="http://fp7-impress.eu/Person/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:imprPerson="http://fp7-impress.eu/Person/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<owl:Class rdf:about="&imprPerson;Responders">
+	<rdfs:subClassOf rdf:resource="&imprPerson;IMPRESSPerson"/>
+	<rdfs:label>Responders</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Roles">
+	<rdfs:subClassOf rdf:resource="&imprPerson;Responders"/>
+	<rdfs:label>Roles</rdfs:label>
+	<rdfs:comment>A survivor of an EOPHC</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;IncidentCoordination">
+	<rdfs:subClassOf rdf:resource="&imprPerson;Roles"/>
+	<rdfs:label>IncidentCoordination</rdfs:label>
+	<rdfs:comment>The upper level coordination roles that a person may have during an emergency </rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;InformationOfficer">
+	<rdfs:subClassOf rdf:resource="&imprPerson;IncidentCoordination"/>
+	<rdfs:label>InformationOfficer</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;LiaisonOfficer">
+	<rdfs:subClassOf rdf:resource="&imprPerson;IncidentCoordination"/>
+	<rdfs:label>LiaisonOfficer</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;SafetyOfficer">
+	<rdfs:subClassOf rdf:resource="&imprPerson;IncidentCoordination"/>
+	<rdfs:label>SafetyOfficer</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;IncidentCoordinationLevel2">
+	<rdfs:subClassOf rdf:resource="&imprPerson;IncidentCoordination"/>
+	<rdfs:label>IncidentCoordinationLevel2</rdfs:label>
+	<rdfs:comment>The lower lever coordination roles that a person may have during an emergency</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;OperationCommnader">
+	<rdfs:subClassOf rdf:resource="&imprPerson;IncidentCoordinationLevel2"/>
+	<rdfs:label>OperationCommnader</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;PlanningOfficer">
+	<rdfs:subClassOf rdf:resource="&imprPerson;IncidentCoordinationLevel2"/>
+	<rdfs:label>PlanningOfficer</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;LogisticsOfficer">
+	<rdfs:subClassOf rdf:resource="&imprPerson;IncidentCoordinationLevel2"/>
+	<rdfs:label>LogisticsOfficer</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;AdministrationOfficer">
+	<rdfs:subClassOf rdf:resource="&imprPerson;IncidentCoordinationLevel2"/>
+	<rdfs:label>AdministrationOfficer</rdfs:label>
+	<rdfs:comment>The indicators of the person�s health state</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;CommunityRelationOfficer">
+	<rdfs:subClassOf rdf:resource="&imprPerson;IncidentCoordinationLevel2"/>
+	<rdfs:label>CommunityRelationOfficer</rdfs:label>
+	<rdfs:comment>The roles that a person may have during an emergency </rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;CommandGroupOnScene">
+	<rdfs:subClassOf rdf:resource="&imprPerson;Responders"/>
+	<rdfs:label>CommandGroupOnScene</rdfs:label>
+	<rdfs:comment>"In complex incidents or incidents over an extended time</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;MedicalIncidentCommander">
+	<rdfs:subClassOf rdf:resource="&imprPerson;CommandGroupOnScene"/>
+	<rdfs:label>MedicalIncidentCommander</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;PoliceIncidentCommander">
+	<rdfs:subClassOf rdf:resource="&imprPerson;CommandGroupOnScene"/>
+	<rdfs:label>PoliceIncidentCommander</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;RescueIncidentCommander">
+	<rdfs:subClassOf rdf:resource="&imprPerson;CommandGroupOnScene"/>
+	<rdfs:label>RescueIncidentCommander</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Affected">
+	<rdfs:subClassOf rdf:resource="&imprPerson;IMPRESSPerson"/>
+	<rdfs:label>Affected</rdfs:label>
+	<rdfs:comment>A single individual which is affected by an EOPHC</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Humans">
+	<rdfs:subClassOf rdf:resource="&imprPerson;Affected"/>
+	<rdfs:label>Humans</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Survivors">
+	<rdfs:subClassOf rdf:resource="&imprPerson;Humans"/>
+	<rdfs:label>Survivors</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;NonInjured">
+	<rdfs:subClassOf rdf:resource="&imprPerson;Survivors"/>
+	<rdfs:label>NonInjured</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;NonInjuredVictims">
+	<rdfs:subClassOf rdf:resource="&imprPerson;NonInjured"/>
+	<rdfs:label>NonInjuredVictims</rdfs:label>
+	<rdfs:comment>Usually accompany injured patients. A special area must be prepared for these victims with access to psychological support staff and information. Voluntary organizations are very useful.</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Injured">
+	<rdfs:subClassOf rdf:resource="&imprPerson;Survivors"/>
+	<rdfs:label>Injured</rdfs:label>
+	<rdfs:comment>"Injured person can be described by ICD10-ICECI. Please</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;FirstAidInjury">
+	<rdfs:subClassOf rdf:resource="&imprPerson;Injured"/>
+	<rdfs:label>FirstAidInjury</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;LostTimeInjury">
+	<rdfs:subClassOf rdf:resource="&imprPerson;Injured"/>
+	<rdfs:label>LostTimeInjury</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;MedicalTreatmentInjury">
+	<rdfs:subClassOf rdf:resource="&imprPerson;Injured"/>
+	<rdfs:label>MedicalTreatmentInjury</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;SeverelyInjuredPatient">
+	<rdfs:subClassOf rdf:resource="&imprPerson;Injured"/>
+	<rdfs:label>SeverelyInjuredPatient</rdfs:label>
+	<rdfs:comment>"Transported by ambulance</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;LessSeverelyInjuredPatients">
+	<rdfs:subClassOf rdf:resource="&imprPerson;Injured"/>
+	<rdfs:label>LessSeverelyInjuredPatients</rdfs:label>
+	<rdfs:comment>"Usually come by ambulance</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Expectant">
+	<rdfs:subClassOf rdf:resource="&imprPerson;Injured"/>
+	<rdfs:label>Expectant</rdfs:label>
+	<rdfs:comment>"Blue tag</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;HealthStatus">
+	<rdfs:subClassOf rdf:resource="&imprPerson;Injured"/>
+	<rdfs:label>HealthStatus</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;PhysiologicalLesions">
+	<rdfs:subClassOf rdf:resource="&imprPerson;HealthStatus"/>
+	<rdfs:label>PhysiologicalLesions</rdfs:label>
+	<rdfs:comment>Physiological injuries resulting from anatomical lesions</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;AirwayBlocked">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>AirwayBlocked</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Dispnea">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>Dispnea</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;MetabolicAcidosis">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>MetabolicAcidosis</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Cianosis/hypoxemia">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>Cianosis/hypoxemia</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Hypoxemia">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>Hypoxemia</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;RespiratoriDepression">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>RespiratoriDepression</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;ResrespiratoryAcidosisacidosis">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>ResrespiratoryAcidosisacidosis</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;RiseInPleuralPressure">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>RiseInPleuralPressure</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;VentilatoryImpairment">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>VentilatoryImpairment</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;FlailChest">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>FlailChest</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;ARDS">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>ARDS</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;AbdominalCompartmentSyndrome">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>AbdominalCompartmentSyndrome</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;AcuteCompartmentSyndrome">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>AcuteCompartmentSyndrome</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;CardiogenicShock">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>CardiogenicShock</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;CirculatoryShock">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>CirculatoryShock</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;MediastinalVeinCompression">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>MediastinalVeinCompression</rdfs:label>
+	<rdfs:comment>compression of the mediastinal vein</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;InternalOrgansDamage">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>InternalOrgansDamage</rdfs:label>
+	<rdfs:comment>damage of internal organs</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;PelvicOrgansDamage">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>PelvicOrgansDamage</rdfs:label>
+	<rdfs:comment>damage of pelvic organs</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;VolumeDecrease">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>VolumeDecrease</rdfs:label>
+	<rdfs:comment>decrease in circulatory volume</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Disidratation">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>Disidratation</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;HeartFailure">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>HeartFailure</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Hypotension">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>Hypotension</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;MediastinalPressure">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>MediastinalPressure</rdfs:label>
+	<rdfs:comment>rise in mediastinal pressure</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;BrainDeficit">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>BrainDeficit</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;CAD">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>CAD</rdfs:label>
+	<rdfs:comment>Cervical acceleration-deceleration (CAD)</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;RiseInIntracranialPressure">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>RiseInIntracranialPressure</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;BurneShock">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>BurneShock</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;PerifericEdema">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>PerifericEdema</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;FunctionalLossOfTheLimb">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>FunctionalLossOfTheLimb</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Hypotermia">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>Hypotermia</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;LossOfVision">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>LossOfVision</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;MotorDeficits">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>MotorDeficits</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Paralysis">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>Paralysis</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;ToxicContamination">
+	<rdfs:subClassOf rdf:resource="&imprPerson;PhysiologicalLesions"/>
+	<rdfs:label>ToxicContamination</rdfs:label>
+	<rdfs:comment>contamination by toxic substance/radiation</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;AnatomicalLesions">
+	<rdfs:subClassOf rdf:resource="&imprPerson;HealthStatus"/>
+	<rdfs:label>AnatomicalLesions</rdfs:label>
+	<rdfs:comment>Any anatomical lesion resulting from trauma</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;AirwayObstruction">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>AirwayObstruction</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Material">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>Material</rdfs:label>
+	<rdfs:comment>"blood</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Edema">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>Edema</rdfs:label>
+	<rdfs:comment>Is this the same as P2.1.1.2.6.2.7 ?</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;RetractedTongue">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>RetractedTongue</rdfs:label>
+	<rdfs:comment>retracted tongue cused by reduced muscular tension in unconscious patient</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Epistaxis">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>Epistaxis</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;ConcussionBrain">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>ConcussionBrain</rdfs:label>
+	<rdfs:comment>concussion/contusion brain</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Edema">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>Edema</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Hemorrhage">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>Hemorrhage</rdfs:label>
+	<rdfs:comment>"Subarachnoid</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Ematomi">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>Ematomi</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;RespiratorycenterInjury">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>RespiratorycenterInjury</rdfs:label>
+	<rdfs:comment>injury to the respiratorycenter of the brain</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;ContusionOfFace">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>"ContusionOfFace</rdfs:label>
+	<rdfs:comment> scalp"</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;ForeignBody">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>ForeignBody</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;ContusionNeck">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>ContusionNeck</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;TrachealLesion">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>TrachealLesion</rdfs:label>
+	<rdfs:comment>tracheal lesion/emphisema (Classificazione di Schaefer Fuhrman)</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;BluntLesion">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>BluntLesion</rdfs:label>
+	<rdfs:comment>blunt lesion/contusion of the chest wall</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;MultipleRibFracture">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>MultipleRibFracture</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;LungsInjuries">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>LungsInjuries</rdfs:label>
+	<rdfs:comment>injuries (bleeding/air leaking) of the lungs</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Hemothorax">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>Hemothorax</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Pneumothorax">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>Pneumothorax</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;TensionPneumothorax">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>TensionPneumothorax</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;DiaphragmLesions">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>DiaphragmLesions</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;PericardialFluid/tamponation">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>PericardialFluid/tamponation</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;ValavularLesions">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>ValavularLesions</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;LungToxicInjury">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>LungToxicInjury</rdfs:label>
+	<rdfs:comment>lung injury caused by toxic gases</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;VertebralColumnTrauma">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>VertebralColumnTrauma</rdfs:label>
+	<rdfs:comment>trauma of the vertebral column</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;SpinalLesion">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>SpinalLesion</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;PenetratingWound">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>PenetratingWound</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;InternalBlingeed">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>InternalBlingeed</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;InjuryToSpleen">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>InjuryToSpleen</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;ExternalBleeding">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>ExternalBleeding</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;FractureOfPelvis">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>FractureOfPelvis</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;LimbFracture">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>LimbFracture</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;OpenFracture">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>OpenFracture</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;CloseFracture">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>CloseFracture</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;RespiratoryCenterInjury">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>RespiratoryCenterInjury</rdfs:label>
+	<rdfs:comment>injury to the respiratory center caused by shock or lack of oxygen</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Atelectasia">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>Atelectasia</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;HeartInsufficiency">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>HeartInsufficiency</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Tachycardia">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>Tachycardia</rdfs:label>
+	<rdfs:comment>"supraventricular and ventricular tachycardia</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Burn">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>Burn</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;RadiationEffect">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>RadiationEffect</rdfs:label>
+	<rdfs:comment>"Effect of radiation</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;DrowningSyndrome">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>DrowningSyndrome</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;HeatShock">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>HeatShock</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;InalationOfSmoke">
+	<rdfs:subClassOf rdf:resource="&imprPerson;AnatomicalLesions"/>
+	<rdfs:label>InalationOfSmoke</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;StateIndicators">
+	<rdfs:subClassOf rdf:resource="&imprPerson;HealthStatus"/>
+	<rdfs:label>StateIndicators</rdfs:label>
+	<rdfs:comment>"The state indicators can be given by the ICF? Please</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;S.T.A.R.T.Triage">
+	<rdfs:subClassOf rdf:resource="&imprPerson;StateIndicators"/>
+	<rdfs:label>S.T.A.R.T.Triage</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Deambulation">
+	<rdfs:subClassOf rdf:resource="&imprPerson;S.T.A.R.T.Triage"/>
+	<rdfs:label>Deambulation</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Breathing">
+	<rdfs:subClassOf rdf:resource="&imprPerson;S.T.A.R.T.Triage"/>
+	<rdfs:label>Breathing</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;BreathsPerMinute">
+	<rdfs:subClassOf rdf:resource="&imprPerson;S.T.A.R.T.Triage"/>
+	<rdfs:label>BreathsPerMinute</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;RadialWrist">
+	<rdfs:subClassOf rdf:resource="&imprPerson;S.T.A.R.T.Triage"/>
+	<rdfs:label>RadialWrist</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Collaboration">
+	<rdfs:subClassOf rdf:resource="&imprPerson;S.T.A.R.T.Triage"/>
+	<rdfs:label>Collaboration</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;F.A.S.T.Triage">
+	<rdfs:subClassOf rdf:resource="&imprPerson;StateIndicators"/>
+	<rdfs:label>F.A.S.T.Triage</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Airway">
+	<rdfs:subClassOf rdf:resource="&imprPerson;F.A.S.T.Triage"/>
+	<rdfs:label>Airway</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;RespiratoryRate">
+	<rdfs:subClassOf rdf:resource="&imprPerson;F.A.S.T.Triage"/>
+	<rdfs:label>RespiratoryRate</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;OximetryDevice">
+	<rdfs:subClassOf rdf:resource="&imprPerson;F.A.S.T.Triage"/>
+	<rdfs:label>OximetryDevice</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Ipoventilation">
+	<rdfs:subClassOf rdf:resource="&imprPerson;F.A.S.T.Triage"/>
+	<rdfs:label>Ipoventilation</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;HeartRate">
+	<rdfs:subClassOf rdf:resource="&imprPerson;F.A.S.T.Triage"/>
+	<rdfs:label>HeartRate</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;BloodPressure">
+	<rdfs:subClassOf rdf:resource="&imprPerson;F.A.S.T.Triage"/>
+	<rdfs:label>BloodPressure</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;PresenceOfHemorrhage">
+	<rdfs:subClassOf rdf:resource="&imprPerson;F.A.S.T.Triage"/>
+	<rdfs:label>PresenceOfHemorrhage</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;GlasgowComaScale">
+	<rdfs:subClassOf rdf:resource="&imprPerson;F.A.S.T.Triage"/>
+	<rdfs:label>GlasgowComaScale</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Contaminated">
+	<rdfs:subClassOf rdf:resource="&imprPerson;HealthStatus"/>
+	<rdfs:label>Contaminated</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Skin">
+	<rdfs:subClassOf rdf:resource="&imprPerson;Contaminated"/>
+	<rdfs:label>Skin</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Respiratory">
+	<rdfs:subClassOf rdf:resource="&imprPerson;Contaminated"/>
+	<rdfs:label>Respiratory</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Eyes">
+	<rdfs:subClassOf rdf:resource="&imprPerson;Contaminated"/>
+	<rdfs:label>Eyes</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;GITract">
+	<rdfs:subClassOf rdf:resource="&imprPerson;Contaminated"/>
+	<rdfs:label>GITract</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Dead">
+	<rdfs:subClassOf rdf:resource="&imprPerson;Humans"/>
+	<rdfs:label>Dead</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;DeadVictims">
+	<rdfs:subClassOf rdf:resource="&imprPerson;Dead"/>
+	<rdfs:label>DeadVictims</rdfs:label>
+	<rdfs:comment>Must be transferred to a prepared area</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Animals">
+	<rdfs:subClassOf rdf:resource="&imprPerson;Affected"/>
+	<rdfs:label>Animals</rdfs:label>
+	<rdfs:comment>An animal that may be affected by an EOPHC</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Pets">
+	<rdfs:subClassOf rdf:resource="&imprPerson;Animals"/>
+	<rdfs:label>Pets</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Productive">
+	<rdfs:subClassOf rdf:resource="&imprPerson;Animals"/>
+	<rdfs:label>Productive</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprPerson;Zoo">
+	<rdfs:subClassOf rdf:resource="&imprPerson;Animals"/>
+	<rdfs:label>Zoo</rdfs:label>
+</owl:Class>
+</rdf:RDF>

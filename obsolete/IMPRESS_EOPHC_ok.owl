@@ -1,0 +1,789 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+     <!ENTITY imprEOPHC "http://fp7-impress.eu/EOPHC/" >
+     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+]>
+
+<rdf:RDF xmlns="http://fp7-impress.eu/EOPHC/"
+     xml:base="http://fp7-impress.eu/EOPHC/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:imprEOPHC="http://fp7-impress.eu/EOPHC/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<owl:Class rdf:about="&imprEOPHC;Natural">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;EOPHC"/>
+	<rdfs:label>Natural</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Geophysical">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Natural"/>
+	<rdfs:label>Geophysical</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Earthquake">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Geophysical"/>
+	<rdfs:label>Earthquake</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Ground">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Earthquake"/>
+	<rdfs:label>Ground</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Vertical">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Ground"/>
+	<rdfs:label>Vertical</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Horizontal">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Ground"/>
+	<rdfs:label>Horizontal</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Tsunami">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Earthquake"/>
+	<rdfs:label>Tsunami</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Volcano">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Geophysical"/>
+	<rdfs:label>Volcano</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Eruption">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Volcano"/>
+	<rdfs:label>Eruption</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;VolcanicAsh">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Volcano"/>
+	<rdfs:label>VolcanicAsh</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;MassMovement(dry)">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Geophysical"/>
+	<rdfs:label>MassMovement(dry)</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Rockfall">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;MassMovement(dry)"/>
+	<rdfs:label>Rockfall</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Avalanche">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;MassMovement(dry)"/>
+	<rdfs:label>Avalanche</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;SnowAvalanche">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Avalanche"/>
+	<rdfs:label>SnowAvalanche</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;DebrisAvalanche">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Avalanche"/>
+	<rdfs:label>DebrisAvalanche</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Landslide">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;MassMovement(dry)"/>
+	<rdfs:label>Landslide</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Lahar">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Landslide"/>
+	<rdfs:label>Lahar</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;DebrisFlow">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Landslide"/>
+	<rdfs:label>DebrisFlow</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Mudslide">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Landslide"/>
+	<rdfs:label>Mudslide</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Subsidence">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Landslide"/>
+	<rdfs:label>Subsidence</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Meteorological">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Natural"/>
+	<rdfs:label>Meteorological</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Storm">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Meteorological"/>
+	<rdfs:label>Storm</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Thunderstorm/Lightning">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Storm"/>
+	<rdfs:label>Thunderstorm/Lightning</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Snowstorm/Blizzard">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Storm"/>
+	<rdfs:label>Snowstorm/Blizzard</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Sandstorm/Duststorm">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Storm"/>
+	<rdfs:label>Sandstorm/Duststorm</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Windstorm">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Storm"/>
+	<rdfs:label>Windstorm</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Tornado">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Storm"/>
+	<rdfs:label>Tornado</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;OrographicStorm(strongWinds)">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Storm"/>
+	<rdfs:label>OrographicStorm(strongWinds)</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Hailstorm">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Storm"/>
+	<rdfs:label>Hailstorm</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;TropicalStorm">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Storm"/>
+	<rdfs:label>TropicalStorm</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Gale/WinterStorm">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Storm"/>
+	<rdfs:label>Gale/WinterStorm</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;TropicalCyclone">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Meteorological"/>
+	<rdfs:label>TropicalCyclone</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Hydrological">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Natural"/>
+	<rdfs:label>Hydrological</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Flood">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Hydrological"/>
+	<rdfs:label>Flood</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Areal(rainfallRelated)">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Flood"/>
+	<rdfs:label>Areal(rainfallRelated)</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Riverine">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Flood"/>
+	<rdfs:label>Riverine</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;EstuarineAndCoastal">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Flood"/>
+	<rdfs:label>EstuarineAndCoastal</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;UrbanFlooding">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Flood"/>
+	<rdfs:label>UrbanFlooding</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;CatastrophicFlooding(dam)">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Flood"/>
+	<rdfs:label>CatastrophicFlooding(dam)</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;MassMovement(wet)">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Hydrological"/>
+	<rdfs:label>MassMovement(wet)</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Rockfall">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;MassMovement(wet)"/>
+	<rdfs:label>Rockfall</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Landslide">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;MassMovement(wet)"/>
+	<rdfs:label>Landslide</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;DebrisFlow">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Landslide"/>
+	<rdfs:label>DebrisFlow</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Avalanche">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;MassMovement(wet)"/>
+	<rdfs:label>Avalanche</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;SnowAvalanche">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Avalanche"/>
+	<rdfs:label>SnowAvalanche</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;DebrisAvalanche">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Avalanche"/>
+	<rdfs:label>DebrisAvalanche</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Subsidence">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;MassMovement(wet)"/>
+	<rdfs:label>Subsidence</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;SuddenSubsidence">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Subsidence"/>
+	<rdfs:label>SuddenSubsidence</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Long�?�lastingSubsidence">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Subsidence"/>
+	<rdfs:label>Long�?�lastingSubsidence</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Climatological">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Natural"/>
+	<rdfs:label>Climatological</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;ExtremeTemperature">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Climatological"/>
+	<rdfs:label>ExtremeTemperature</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;HighExtremes">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;ExtremeTemperature"/>
+	<rdfs:label>HighExtremes</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;HeatWave">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;HighExtremes"/>
+	<rdfs:label>HeatWave</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;LowExtremes">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;ExtremeTemperature"/>
+	<rdfs:label>LowExtremes</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Frost">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;LowExtremes"/>
+	<rdfs:label>Frost</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;SnowPressure">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;LowExtremes"/>
+	<rdfs:label>SnowPressure</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Icing">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;LowExtremes"/>
+	<rdfs:label>Icing</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;FreecingRain">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;LowExtremes"/>
+	<rdfs:label>FreecingRain</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;DebrisAvalanche(snow)">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;LowExtremes"/>
+	<rdfs:label>DebrisAvalanche(snow)</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Drought">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Climatological"/>
+	<rdfs:label>Drought</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;ForestFire">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Climatological"/>
+	<rdfs:label>ForestFire</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Lightning">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;ForestFire"/>
+	<rdfs:label>Lightning</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;BrushFire">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Lightning"/>
+	<rdfs:label>BrushFire</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;CrownFire">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Lightning"/>
+	<rdfs:label>CrownFire</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;PeatFire">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Lightning"/>
+	<rdfs:label>PeatFire</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Lava">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;ForestFire"/>
+	<rdfs:label>Lava</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Biological">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Natural"/>
+	<rdfs:label>Biological</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Epidemic">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Biological"/>
+	<rdfs:label>Epidemic</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;ViralInfectiousDiseases">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Epidemic"/>
+	<rdfs:label>ViralInfectiousDiseases</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;BacterialInfectiousDiseases">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Epidemic"/>
+	<rdfs:label>BacterialInfectiousDiseases</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;ParasiticInfectiousDiseases">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Epidemic"/>
+	<rdfs:label>ParasiticInfectiousDiseases</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;FungalInfectiousDiseases">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Epidemic"/>
+	<rdfs:label>FungalInfectiousDiseases</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;ICD10-A00-B99">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Epidemic"/>
+	<rdfs:label>ICD10-A00-B99</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;PrionInfectiousDiseases">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Epidemic"/>
+	<rdfs:label>PrionInfectiousDiseases</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;InsectInfestation">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Biological"/>
+	<rdfs:label>InsectInfestation</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Grasshoper/Locust/Worms">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;InsectInfestation"/>
+	<rdfs:label>Grasshoper/Locust/Worms</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;AnimalStampede">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Biological"/>
+	<rdfs:label>AnimalStampede</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;BiologicalV2">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Natural"/>
+	<rdfs:label>BiologicalV2</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;TransmissionMode">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;BiologicalV2"/>
+	<rdfs:label>TransmissionMode</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Direct">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;TransmissionMode"/>
+	<rdfs:label>Direct</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Droplet">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Direct"/>
+	<rdfs:label>Droplet</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Aerosol">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Direct"/>
+	<rdfs:label>Aerosol</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Skin-to-skin">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Direct"/>
+	<rdfs:label>Skin-to-skin</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Indirect">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;TransmissionMode"/>
+	<rdfs:label>Indirect</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Fomites">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Indirect"/>
+	<rdfs:label>Fomites</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Vectors">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Indirect"/>
+	<rdfs:label>Vectors</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Food+water">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Indirect"/>
+	<rdfs:label>Food+water</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;IntermediateHosts(snails)">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Indirect"/>
+	<rdfs:label>IntermediateHosts(snails)</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Type">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;BiologicalV2"/>
+	<rdfs:label>Type</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Bacteria">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Type"/>
+	<rdfs:label>Bacteria</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Gram+">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Bacteria"/>
+	<rdfs:label>Gram+</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Gram-">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Bacteria"/>
+	<rdfs:label>Gram-</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Viruses">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Type"/>
+	<rdfs:label>Viruses</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;GeneticMaterial(RNA/DNA)">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Viruses"/>
+	<rdfs:label>GeneticMaterial(RNA/DNA)</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Strandedness(single)">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Viruses"/>
+	<rdfs:label>"Strandedness(single</rdfs:label>
+	<rdfs:comment> double)"</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Size/shapeOfCapsid">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Viruses"/>
+	<rdfs:label>Size/shapeOfCapsid</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Enveloped/nonEnveloped">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Viruses"/>
+	<rdfs:label>Enveloped/nonEnveloped</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;ReplicationMethod">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Viruses"/>
+	<rdfs:label>ReplicationMethod</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Fungai">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Type"/>
+	<rdfs:label>Fungai</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Yeasts">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Fungai"/>
+	<rdfs:label>Yeasts</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Molds">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Fungai"/>
+	<rdfs:label>Molds</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Metazoa">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Type"/>
+	<rdfs:label>Metazoa</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Protozoa">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Type"/>
+	<rdfs:label>Protozoa</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Rickettsia">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Type"/>
+	<rdfs:label>Rickettsia</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Prions">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Type"/>
+	<rdfs:label>Prions</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Chlamydia">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Type"/>
+	<rdfs:label>Chlamydia</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Infectivity">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;BiologicalV2"/>
+	<rdfs:label>Infectivity</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Pathogenecity">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;BiologicalV2"/>
+	<rdfs:label>Pathogenecity</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Virulence">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;BiologicalV2"/>
+	<rdfs:label>Virulence</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Immunogenicity">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;BiologicalV2"/>
+	<rdfs:label>Immunogenicity</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;HumanFactor">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;EOPHC"/>
+	<rdfs:label>HumanFactor</rdfs:label>
+	<rdfs:comment>"An EOPHC involving a technological</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Transportation">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;HumanFactor"/>
+	<rdfs:label>Transportation</rdfs:label>
+	<rdfs:comment>An EOPHC involving a technological event in transportation</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Air">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Transportation"/>
+	<rdfs:label>Air</rdfs:label>
+	<rdfs:comment>An EOPHC involving a technological event in air transportation</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;AirAccident">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Air"/>
+	<rdfs:label>AirAccident</rdfs:label>
+	<rdfs:comment>An accident in air transportation involving any kind of aircraft</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Land">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;AirAccident"/>
+	<rdfs:label>Land</rdfs:label>
+	<rdfs:comment>An accident in air transportation involving any kind of aircraft happening on the land</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Sea">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;AirAccident"/>
+	<rdfs:label>Sea</rdfs:label>
+	<rdfs:comment>An accident in air transportation involving any kind of aircraft happening on the sea</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Road">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Transportation"/>
+	<rdfs:label>Road</rdfs:label>
+	<rdfs:comment>An EOPHC involving a technological event in road transportation</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;RoadAccident">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Road"/>
+	<rdfs:label>RoadAccident</rdfs:label>
+	<rdfs:comment>An accident in road transportation including any mean of road transport</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;OpenRoad">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;RoadAccident"/>
+	<rdfs:label>OpenRoad</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Tunnel">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;RoadAccident"/>
+	<rdfs:label>Tunnel</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Bridge">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;RoadAccident"/>
+	<rdfs:label>Bridge</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Aquatic">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Transportation"/>
+	<rdfs:label>Aquatic</rdfs:label>
+	<rdfs:comment>An EOPHC involving a technological event in transportation based on water</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;ShippingAccident">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Aquatic"/>
+	<rdfs:label>ShippingAccident</rdfs:label>
+	<rdfs:comment>"An accident in sea</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Rail">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Transportation"/>
+	<rdfs:label>Rail</rdfs:label>
+	<rdfs:comment>An EOPHC involving a technological event in railway transportation</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;RailAccident">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Rail"/>
+	<rdfs:label>RailAccident</rdfs:label>
+	<rdfs:comment>An accident in railway  transportation including trains and other railway vehicles</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Open">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;RailAccident"/>
+	<rdfs:label>Open</rdfs:label>
+	<rdfs:comment>An accident in railway transportation involving any kind of aircraft happening on the open space</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Tunnel">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;RailAccident"/>
+	<rdfs:label>Tunnel</rdfs:label>
+	<rdfs:comment>An accident in railway transportation involving any kind of aircraft happening in a tunnel</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Other">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Transportation"/>
+	<rdfs:label>Other</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Incidents">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;HumanFactor"/>
+	<rdfs:label>Incidents</rdfs:label>
+	<rdfs:comment>An EOPHC technological event due to human intervention</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Trauma">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Incidents"/>
+	<rdfs:label>Trauma</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Chemical">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Incidents"/>
+	<rdfs:label>Chemical</rdfs:label>
+	<rdfs:comment>A chemical event or accident</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;CWAs">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Chemical"/>
+	<rdfs:label>CWAs</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;TICs">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Chemical"/>
+	<rdfs:label>TICs</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;NonCWCDefined">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Chemical"/>
+	<rdfs:label>NonCWCDefined</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Radio/nuclear">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Incidents"/>
+	<rdfs:label>Radio/nuclear</rdfs:label>
+	<rdfs:comment>A radionuclear event or accident</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;RDDs">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Radio/nuclear"/>
+	<rdfs:label>RDDs</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;IMDs">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Radio/nuclear"/>
+	<rdfs:label>IMDs</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;NuclearBomb">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Radio/nuclear"/>
+	<rdfs:label>NuclearBomb</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Accident">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Radio/nuclear"/>
+	<rdfs:label>Accident</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Explosion">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Incidents"/>
+	<rdfs:label>Explosion</rdfs:label>
+	<rdfs:comment>An explosion due to human intervention</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Fire">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Incidents"/>
+	<rdfs:label>Fire</rdfs:label>
+	<rdfs:comment>A fire due to human intervention</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;FireInBuilding">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Fire"/>
+	<rdfs:label>FireInBuilding</rdfs:label>
+	<rdfs:comment>"A fire happening in a building (house</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;FireInIndustry">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Fire"/>
+	<rdfs:label>FireInIndustry</rdfs:label>
+	<rdfs:comment>"A fire happening in industry (factory</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;PrescribedFires">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;FireInIndustry"/>
+	<rdfs:label>PrescribedFires</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Arsons">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;FireInIndustry"/>
+	<rdfs:label>Arsons</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Pyroterrorism">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;FireInIndustry"/>
+	<rdfs:label>Pyroterrorism</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Collapse">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Incidents"/>
+	<rdfs:label>Collapse</rdfs:label>
+	<rdfs:comment>A collapsing event</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;BuildingCollapse">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Collapse"/>
+	<rdfs:label>BuildingCollapse</rdfs:label>
+	<rdfs:comment>A collapse of a building</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;RoadCollapse">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Collapse"/>
+	<rdfs:label>RoadCollapse</rdfs:label>
+	<rdfs:comment>A collapse of a road</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;TunnelCollapse">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;RoadCollapse"/>
+	<rdfs:label>TunnelCollapse</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;BridgeCollapse">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Collapse"/>
+	<rdfs:label>BridgeCollapse</rdfs:label>
+	<rdfs:comment>A collapse of a bridge</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Environmental">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Incidents"/>
+	<rdfs:label>Environmental</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Contamination/Pollution">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Environmental"/>
+	<rdfs:label>Contamination/Pollution</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Air">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Contamination/Pollution"/>
+	<rdfs:label>Air</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Water">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Contamination/Pollution"/>
+	<rdfs:label>Water</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Landscape">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Contamination/Pollution"/>
+	<rdfs:label>Landscape</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;StructuralDamage">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Incidents"/>
+	<rdfs:label>StructuralDamage</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Crack">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;StructuralDamage"/>
+	<rdfs:label>Crack</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Wall">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Crack"/>
+	<rdfs:label>Wall</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Roof">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Crack"/>
+	<rdfs:label>Roof</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Floor">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Crack"/>
+	<rdfs:label>Floor</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Collapse">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;StructuralDamage"/>
+	<rdfs:label>Collapse</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Total">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Collapse"/>
+	<rdfs:label>Total</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Partial">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Collapse"/>
+	<rdfs:label>Partial</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Wall">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Partial"/>
+	<rdfs:label>Wall</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Floor">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Partial"/>
+	<rdfs:label>Floor</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Roof">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Partial"/>
+	<rdfs:label>Roof</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Bend">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;StructuralDamage"/>
+	<rdfs:label>Bend</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Frame">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Bend"/>
+	<rdfs:label>Frame</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Industry">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;HumanFactor"/>
+	<rdfs:label>Industry</rdfs:label>
+	<rdfs:comment>An EOPHC involving a technological event in industry</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;EnergyIndustry">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Industry"/>
+	<rdfs:label>EnergyIndustry</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Nuclear">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;EnergyIndustry"/>
+	<rdfs:label>Nuclear</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Oil/gas">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;EnergyIndustry"/>
+	<rdfs:label>Oil/gas</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Land">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Oil/gas"/>
+	<rdfs:label>Land</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Sea">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Oil/gas"/>
+	<rdfs:label>Sea</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Chemical">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Oil/gas"/>
+	<rdfs:label>Chemical</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;DefenseIndustry">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Industry"/>
+	<rdfs:label>DefenseIndustry</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Explosives/munition">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;DefenseIndustry"/>
+	<rdfs:label>Explosives/munition</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;MunitionDumps">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;DefenseIndustry"/>
+	<rdfs:label>MunitionDumps</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;FoodIndustry">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Industry"/>
+	<rdfs:label>FoodIndustry</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;FoodContamination">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;FoodIndustry"/>
+	<rdfs:label>FoodContamination</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Agroterrorism">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;FoodIndustry"/>
+	<rdfs:label>Agroterrorism</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;ManufacturingIndustry">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Industry"/>
+	<rdfs:label>ManufacturingIndustry</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;MiningIndustry">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Industry"/>
+	<rdfs:label>MiningIndustry</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Collapse">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;MiningIndustry"/>
+	<rdfs:label>Collapse</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprEOPHC;Other">
+	<rdfs:subClassOf rdf:resource="&imprEOPHC;Industry"/>
+	<rdfs:label>Other</rdfs:label>
+</owl:Class>
+</rdf:RDF>

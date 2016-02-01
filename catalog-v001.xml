@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://fp7-impress.eu/IMPRESSOntology/skos/" uri="AnatomicalLesionsCodelist.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.w3.org/2004/02/skos/core" uri="http://www.w3.org/2004/02/skos/core#"/>
+    <uri id="Imports Wizard Entry" name="http://www.owl-ontologies.com/unnamed.owl" uri="common/icd-10-ontologies-owl-REVISION-3/root-ontology.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.pms.ifi.uni-muenchen.de/OTN" uri="common/OTN.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl" uri="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/wai#" uri="http://purl.org/wai#"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/wai#" uri="common/wai.owl"/>
+    <uri id="Imports Wizard Entry" name="http://xmlns.com/foaf/0.1/" uri="http://xmlns.com/foaf/spec/"/>
+    <uri id="Imports Wizard Entry" name="http://xmlns.com/foaf/0.1/" uri="common/Foaf.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://fp7-impress.eu/Activity/" uri="IMPRESS_Activity_ok.owl"/>
+    <uri id="Imports Wizard Entry" name="http://fp7-impress.eu/Resource/" uri="IMPRESS_Resource_ok.owl"/>
+    <uri id="Imports Wizard Entry" name="http://fp7-impress.eu/Person/" uri="IMPRESS_Person_ok.owl"/>
+    <uri id="Imports Wizard Entry" name="http://fp7-impress.eu/EOPHC/" uri="IMPRESS_EOPHC_ok.owl"/>
+    <uri id="Imports Wizard Entry" name="http://fp7-impress.eu/Person/" uri="IMPRESS_Activity.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.pms.ifi.uni-muenchen.de/OTN" uri="OTN.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.ifomis.org/bfo/1.1" uri="bfo-1.1.owl"/>
+    <uri id="Imports Wizard Entry" name="http://fp7-impress.eu/Person/" uri="IMPRESS_Resource.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1454333051773" name="http://fp7-impress.eu/Activity/" uri="IMPRESS_Activity.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454333051773" name="http://fp7-impress.eu/EOPHC/" uri="obsolete/IMPRESS_EOPHC_ok.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454333051773" name="http://fp7-impress.eu/IMPRESSOntology" uri="IMPRESSOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454333051773" name="http://fp7-impress.eu/Person/" uri="ImpressPerson.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454333051773" name="http://fp7-impress.eu/Resource/" uri="IMPRESS_Resource_ok.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454333051773" name="http://purl.org/wai" uri="common/wai.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454333051773" name="http://www.ifomis.org/bfo/1.1" uri="common/bfo-1.1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454333051773" name="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl" uri="common/DUL.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454333051773" name="http://www.owl-ontologies.com/unnamed.owl" uri="common/icd-10-ontologies-owl-REVISION-3/root-ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454333051773" name="http://www.pms.ifi.uni-muenchen.de/OTN" uri="common/OTN.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454333051773" name="shadowed:http://fp7-impress.eu/Activity/" uri="obsolete/IMPRESS_Activity_ok.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454333051773" name="shadowed:http://fp7-impress.eu/Person/" uri="obsolete/IMPRESS_Person_ok.owl"/>
+    </group>
+</catalog>

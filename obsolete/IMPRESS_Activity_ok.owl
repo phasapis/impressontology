@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+     <!ENTITY imprActivity "http://fp7-impress.eu/Activity/" >
+     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+]>
+
+<rdf:RDF xmlns="http://fp7-impress.eu/Activity/"
+     xml:base="http://fp7-impress.eu/Activity/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:imprActivity="http://fp7-impress.eu/Activity/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<owl:Class rdf:about="&imprActivity;Communication">
+	<rdfs:subClassOf rdf:resource="&imprActivity;IMPRESSActivity"/>
+	<rdfs:label>Communication</rdfs:label>
+	<rdfs:comment>Any kind of communication that takes place during an activity</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;Telephone">
+	<rdfs:subClassOf rdf:resource="&imprActivity;Communication"/>
+	<rdfs:label>Telephone</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;Mobile">
+	<rdfs:subClassOf rdf:resource="&imprActivity;Communication"/>
+	<rdfs:label>Mobile</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;Phone">
+	<rdfs:subClassOf rdf:resource="&imprActivity;Mobile"/>
+	<rdfs:label>Phone</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;TETRA">
+	<rdfs:subClassOf rdf:resource="&imprActivity;Mobile"/>
+	<rdfs:label>TETRA</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;Internet">
+	<rdfs:subClassOf rdf:resource="&imprActivity;Communication"/>
+	<rdfs:label>Internet</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;SocialNetworks">
+	<rdfs:subClassOf rdf:resource="&imprActivity;Internet"/>
+	<rdfs:label>SocialNetworks</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;HamradioVolunteers">
+	<rdfs:subClassOf rdf:resource="&imprActivity;Communication"/>
+	<rdfs:label>HamradioVolunteers</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;NationalEmergencyTv/radioChannel">
+	<rdfs:subClassOf rdf:resource="&imprActivity;Communication"/>
+	<rdfs:label>NationalEmergencyTv/radioChannel</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;CBRNE">
+	<rdfs:subClassOf rdf:resource="&imprActivity;IMPRESSActivity"/>
+	<rdfs:label>CBRNE</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;MassDecontamination">
+	<rdfs:subClassOf rdf:resource="&imprActivity;CBRNE"/>
+	<rdfs:label>MassDecontamination</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;Antidote/specialMedicationProvision">
+	<rdfs:subClassOf rdf:resource="&imprActivity;CBRNE"/>
+	<rdfs:label>Antidote/specialMedicationProvision</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;RescueServices">
+	<rdfs:subClassOf rdf:resource="&imprActivity;IMPRESSActivity"/>
+	<rdfs:label>RescueServices</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;Medical">
+	<rdfs:subClassOf rdf:resource="&imprActivity;RescueServices"/>
+	<rdfs:label>Medical</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;Triage">
+	<rdfs:subClassOf rdf:resource="&imprActivity;Medical"/>
+	<rdfs:label>Triage</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;Red">
+	<rdfs:subClassOf rdf:resource="&imprActivity;Triage"/>
+	<rdfs:label>Red</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;Yellow">
+	<rdfs:subClassOf rdf:resource="&imprActivity;Triage"/>
+	<rdfs:label>Yellow</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;Green">
+	<rdfs:subClassOf rdf:resource="&imprActivity;Triage"/>
+	<rdfs:label>Green</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;White">
+	<rdfs:subClassOf rdf:resource="&imprActivity;Triage"/>
+	<rdfs:label>White</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;Black">
+	<rdfs:subClassOf rdf:resource="&imprActivity;Triage"/>
+	<rdfs:label>Black</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;PsychologicalSupportTeams">
+	<rdfs:subClassOf rdf:resource="&imprActivity;Medical"/>
+	<rdfs:label>PsychologicalSupportTeams</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;Transportation">
+	<rdfs:subClassOf rdf:resource="&imprActivity;RescueServices"/>
+	<rdfs:label>Transportation</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;TransportationToFieldMedicalFacilities">
+	<rdfs:subClassOf rdf:resource="&imprActivity;Transportation"/>
+	<rdfs:label>TransportationToFieldMedicalFacilities</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;FireServices">
+	<rdfs:subClassOf rdf:resource="&imprActivity;RescueServices"/>
+	<rdfs:label>FireServices</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;FireExtinguishing">
+	<rdfs:subClassOf rdf:resource="&imprActivity;FireServices"/>
+	<rdfs:label>FireExtinguishing</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;RemovingObstacles">
+	<rdfs:subClassOf rdf:resource="&imprActivity;FireServices"/>
+	<rdfs:label>RemovingObstacles</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;SpecialRescueTeams">
+	<rdfs:subClassOf rdf:resource="&imprActivity;RemovingObstacles"/>
+	<rdfs:label>SpecialRescueTeams</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;ExtremeRescue(heightsAndDepths)">
+	<rdfs:subClassOf rdf:resource="&imprActivity;SpecialRescueTeams"/>
+	<rdfs:label>ExtremeRescue(heightsAndDepths)</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;VictimRetruction">
+	<rdfs:subClassOf rdf:resource="&imprActivity;FireServices"/>
+	<rdfs:label>VictimRetruction</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;SurvivorsManagement">
+	<rdfs:subClassOf rdf:resource="&imprActivity;IMPRESSActivity"/>
+	<rdfs:label>SurvivorsManagement</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;Assembling">
+	<rdfs:subClassOf rdf:resource="&imprActivity;SurvivorsManagement"/>
+	<rdfs:label>Assembling</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;Evacuation">
+	<rdfs:subClassOf rdf:resource="&imprActivity;SurvivorsManagement"/>
+	<rdfs:label>Evacuation</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;CrowdControl">
+	<rdfs:subClassOf rdf:resource="&imprActivity;SurvivorsManagement"/>
+	<rdfs:label>CrowdControl</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;Police">
+	<rdfs:subClassOf rdf:resource="&imprActivity;CrowdControl"/>
+	<rdfs:label>Police</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;MedicalServices">
+	<rdfs:subClassOf rdf:resource="&imprActivity;IMPRESSActivity"/>
+	<rdfs:label>MedicalServices</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;Field">
+	<rdfs:subClassOf rdf:resource="&imprActivity;MedicalServices"/>
+	<rdfs:label>Field</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;TherapeuticManoeuvres">
+	<rdfs:subClassOf rdf:resource="&imprActivity;Field"/>
+	<rdfs:label>TherapeuticManoeuvres</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;FirstAidServices">
+	<rdfs:subClassOf rdf:resource="&imprActivity;Field"/>
+	<rdfs:label>FirstAidServices</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;LifeSavingInterventions">
+	<rdfs:subClassOf rdf:resource="&imprActivity;Field"/>
+	<rdfs:label>LifeSavingInterventions</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;Hospital">
+	<rdfs:subClassOf rdf:resource="&imprActivity;IMPRESSActivity"/>
+	<rdfs:label>Hospital</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="&imprActivity;EmergencyDepartment">
+	<rdfs:subClassOf rdf:resource="&imprActivity;Hospital"/>
+	<rdfs:label>EmergencyDepartment</rdfs:label>
+	<rdfs:comment>Could we provide more categories/values?</rdfs:comment>
+</owl:Class>
+</rdf:RDF>
