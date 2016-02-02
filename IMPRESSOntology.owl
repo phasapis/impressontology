@@ -2,6 +2,7 @@
 
 
 <!DOCTYPE rdf:RDF [
+    <!ENTITY terms "http://purl.org/dc/terms/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
@@ -14,19 +15,14 @@
      xml:base="http://fp7-impress.eu/IMPRESSOntology"
      xmlns:impress="http://fp7-impress.eu/IMPRESSOntology/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://fp7-impress.eu/IMPRESSOntology">
-        <owl:imports rdf:resource="&impress;skos/"/>
+        <terms:creator rdf:datatype="&xsd;string">Danae Vergeti, INTRASOFT S.A.</terms:creator>
+        <terms:title rdf:datatype="&xsd;string">IMPRESS Reference Semantic Model</terms:title>
         <owl:imports rdf:resource="http://purl.org/wai#"/>
-        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
-        <owl:imports rdf:resource="http://www.pms.ifi.uni-muenchen.de/OTN"/>
-        <owl:imports rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-        <owl:imports rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
-        <owl:imports rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
-        <owl:imports rdf:resource="http://www.w3.org/ns/org#"/>
-        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
     </owl:Ontology>
     
 
@@ -4802,55 +4798,61 @@
 
     <!-- http://purl.org/wai#Role -->
 
-    <rdf:Description rdf:about="http://purl.org/wai#Role"/>
+    <owl:Class rdf:about="http://purl.org/wai#Role"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
     
 
 
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact -->
 
-    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact"/>
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact"/>
     
 
 
     <!-- http://www.pms.ifi.uni-muenchen.de/OTN#Building -->
 
-    <rdf:Description rdf:about="http://www.pms.ifi.uni-muenchen.de/OTN#Building"/>
+    <owl:Class rdf:about="http://www.pms.ifi.uni-muenchen.de/OTN#Building"/>
     
 
 
     <!-- http://www.pms.ifi.uni-muenchen.de/OTN#Feature -->
 
-    <rdf:Description rdf:about="http://www.pms.ifi.uni-muenchen.de/OTN#Feature"/>
+    <owl:Class rdf:about="http://www.pms.ifi.uni-muenchen.de/OTN#Feature"/>
     
 
 
     <!-- http://www.w3.org/ns/org#Organization -->
 
-    <rdf:Description rdf:about="http://www.w3.org/ns/org#Organization"/>
+    <owl:Class rdf:about="http://www.w3.org/ns/org#Organization"/>
     
 
 
     <!-- http://www.w3.org/ns/prov#Activity -->
 
-    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Activity"/>
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity"/>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/Agent -->
 
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/Group -->
 
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Group"/>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/Person -->
 
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
     </rdf:Description>
