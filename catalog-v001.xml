@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1454405395086" name="http://fp7-impress.eu/Activity/" uri="IMPRESS_Activity.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1454405395086" name="http://fp7-impress.eu/EOPHC/" uri="obsolete/IMPRESS_EOPHC_ok.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1454405395086" name="http://fp7-impress.eu/IMPRESSOntology" uri="IMPRESSOntology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1454405395086" name="http://fp7-impress.eu/Person/" uri="ImpressPerson.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1454405395086" name="http://fp7-impress.eu/Resource/" uri="IMPRESS_Resource_ok.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1454405395086" name="shadowed:http://fp7-impress.eu/Activity/" uri="obsolete/IMPRESS_Activity_ok.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1454405395086" name="shadowed:http://fp7-impress.eu/Person/" uri="obsolete/IMPRESS_Person_ok.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454407298521" name="http://fp7-impress.eu/Activity/" uri="IMPRESS_Activity.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454407298521" name="http://fp7-impress.eu/EOPHC/" uri="obsolete/IMPRESS_EOPHC_ok.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454407298521" name="http://fp7-impress.eu/IMPRESSOntology" uri="IMPRESSOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454407298521" name="http://fp7-impress.eu/Person/" uri="ImpressPerson.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454407298521" name="http://fp7-impress.eu/Resource/" uri="IMPRESS_Resource_ok.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454407298521" name="shadowed:http://fp7-impress.eu/Activity/" uri="obsolete/IMPRESS_Activity_ok.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454407298521" name="shadowed:http://fp7-impress.eu/Person/" uri="obsolete/IMPRESS_Person_ok.owl"/>
     </group>
 </catalog>
