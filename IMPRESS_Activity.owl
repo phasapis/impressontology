@@ -2,6 +2,7 @@
 
 
 <!DOCTYPE rdf:RDF [
+    <!ENTITY terms "http://purl.org/dc/terms/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY imprActivity "http://fp7-impress.eu/Activity/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
@@ -12,14 +13,13 @@
 
 <rdf:RDF xmlns="http://fp7-impress.eu/Activity/"
      xml:base="http://fp7-impress.eu/Activity/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:imprActivity="http://fp7-impress.eu/Activity/">
-    <owl:Ontology>
-        <owl:imports rdf:resource="http://fp7-impress.eu/Activity/"/>
-    </owl:Ontology>
+    <owl:Ontology rdf:about="http://fp7-impress.eu/Activity/"/>
     
 
 
@@ -159,6 +159,12 @@
         <rdfs:label>Hospital</rdfs:label>
         <rdfs:subClassOf rdf:resource="&imprActivity;IMPRESSActivity"/>
     </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/IMPRESSActivity -->
+
+    <owl:Class rdf:about="&imprActivity;IMPRESSActivity"/>
     
 
 
