@@ -20,7 +20,15 @@
 - Removed PPO ontology as obsolete
 - Created version 0.4 of deliverable
 
+###### 23 February 2016
+
+- fixed older skos files
+- added new missing skos for physiological lesions
+- made Triage into skos
+- removed obsolete classes
+-  added and fixed weather ontology to match better WARSYS
+- edxl have addition (partially only stuff we needed now)
+
 ###### Next steps
 
-- add more properties and classes associated with EDXL
 - need to add properties for data access (apart from roles coming from WAI)
