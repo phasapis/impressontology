@@ -26,10 +26,13 @@
 - added new missing skos for physiological lesions
 - made Triage into skos
 - removed obsolete classes
--  added and fixed weather ontology to match better WARSYS
+- added and fixed weather ontology to match better WARSYS
 - edxl have addition (partially only stuff we needed now)
 
 ###### Next steps
 
 - need to add properties for data access (apart from roles coming from WAI)
-- tso codes
+- add agencies of palermo demo
+- TSO codes
+- check temporal aspect suggestion from Geert
+- add categories of vehicles, hospitals from pilots (allegedly to be provided in a few days)
