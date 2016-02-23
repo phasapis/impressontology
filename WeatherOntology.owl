@@ -317,6 +317,12 @@
         <DataProperty abbreviatedIRI="wgs84_pos:long"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#forecastTimeFrom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#forecastTimeTo"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasCloudAltitude"/>
     </Declaration>
     <Declaration>
@@ -354,6 +360,18 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWindSpeed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maximumTemperature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#minimumTemperature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#temperature"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cloud"/>
@@ -2215,6 +2233,14 @@
         <Class IRI="#Wind"/>
     </DataPropertyDomain>
     <DataPropertyRange>
+        <DataProperty IRI="#forecastTimeFrom"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#forecastTimeTo"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#hasCloudAltitude"/>
         <Datatype abbreviatedIRI="xsd:int"/>
     </DataPropertyRange>
@@ -2294,6 +2320,18 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasWindSpeed"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#minimumTemperature"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#temperature"/>
         <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <AnnotationAssertion>

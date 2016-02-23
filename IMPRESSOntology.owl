@@ -7,6 +7,7 @@
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY impress "http://fp7-impress.eu/IMPRESSOntology/" >
     <!ENTITY wgs84_pos "http://www.w3.org/2003/01/geo/wgs84_pos#" >
@@ -21,6 +22,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
@@ -29,10 +31,12 @@
         <terms:creator rdf:datatype="&xsd;string">Danae Vergeti, INTRASOFT S.A.</terms:creator>
         <terms:title rdf:datatype="&xsd;string">IMPRESS Reference Semantic Model</terms:title>
         <terms:description rdf:datatype="&xsd;string">The IMPRESS Reference Semantic Model is a model that describes the domain of major disaster and response services. It is comprised by several modules dedicated to address specific needs.</terms:description>
+        <owl:imports rdf:resource="http://fp7-impress.eu/IMPRESSEDXL"/>
         <owl:imports rdf:resource="http://fp7-impress.eu/Activity/"/>
         <owl:imports rdf:resource="http://fp7-impress.eu/Person/IMPRESSPerson"/>
         <owl:imports rdf:resource="http://fp7-impress.eu/Resource/IMPRESSResource"/>
         <owl:imports rdf:resource="http://purl.org/wai#"/>
+        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <owl:imports rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/weather/WeatherOntology_1.03.owl"/>
     </owl:Ontology>
     
@@ -235,39 +239,43 @@ above the local reference ellipsoid).</rdfs:comment>
     
 
 
-    <!-- http://fp7-impress.eu/IMPRESSOntology#hospitalID -->
+    <!-- http://fp7-impress.eu/IMPRESSEDXL#clinicID -->
 
-    <owl:DatatypeProperty rdf:about="http://fp7-impress.eu/IMPRESSOntology#hospitalID">
+    <rdf:Description rdf:about="http://fp7-impress.eu/IMPRESSEDXL#clinicID">
         <rdfs:domain rdf:resource="http://fp7-impress.eu/Resource/Hospital"/>
-        <rdfs:range rdf:resource="&xsd;string"/>
-    </owl:DatatypeProperty>
+    </rdf:Description>
     
 
 
-    <!-- http://fp7-impress.eu/IMPRESSOntology#hospitalName -->
+    <!-- http://fp7-impress.eu/IMPRESSEDXL#numberOfBedsAvailable -->
 
-    <owl:DatatypeProperty rdf:about="http://fp7-impress.eu/IMPRESSOntology#hospitalName">
+    <rdf:Description rdf:about="http://fp7-impress.eu/IMPRESSEDXL#numberOfBedsAvailable">
         <rdfs:domain rdf:resource="http://fp7-impress.eu/Resource/Hospital"/>
-        <rdfs:range rdf:resource="&xsd;string"/>
-    </owl:DatatypeProperty>
+    </rdf:Description>
     
 
 
-    <!-- http://fp7-impress.eu/IMPRESSOntology#numberOfBedsAvailable -->
+    <!-- http://fp7-impress.eu/IMPRESSEDXL#numberOfBedsDeployed -->
 
-    <owl:DatatypeProperty rdf:about="http://fp7-impress.eu/IMPRESSOntology#numberOfBedsAvailable">
+    <rdf:Description rdf:about="http://fp7-impress.eu/IMPRESSEDXL#numberOfBedsDeployed">
         <rdfs:domain rdf:resource="http://fp7-impress.eu/Resource/Hospital"/>
-        <rdfs:range rdf:resource="&xsd;integer"/>
-    </owl:DatatypeProperty>
+    </rdf:Description>
     
 
 
-    <!-- http://fp7-impress.eu/IMPRESSOntology#reportID -->
+    <!-- http://fp7-impress.eu/IMPRESSEDXL#numberOfBedsSupplamentary -->
 
-    <owl:DatatypeProperty rdf:about="http://fp7-impress.eu/IMPRESSOntology#reportID">
+    <rdf:Description rdf:about="http://fp7-impress.eu/IMPRESSEDXL#numberOfBedsSupplamentary">
+        <rdfs:domain rdf:resource="http://fp7-impress.eu/Resource/Hospital"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://fp7-impress.eu/IMPRESSEDXL#reportID -->
+
+    <rdf:Description rdf:about="http://fp7-impress.eu/IMPRESSEDXL#reportID">
         <rdfs:domain rdf:resource="http://fp7-impress.eu/IMPRESSOntology#HospitalReport"/>
-        <rdfs:range rdf:resource="&xsd;string"/>
-    </owl:DatatypeProperty>
+    </rdf:Description>
     
 
 
@@ -287,6 +295,14 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:Class rdf:about="http://fp7-impress.eu/Activity/IMPRESSActivity">
         <owl:equivalentClass rdf:resource="http://www.w3.org/ns/prov#Activity"/>
     </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Activity/Triage -->
+
+    <rdf:Description rdf:about="http://fp7-impress.eu/Activity/Triage">
+        <rdfs:subClassOf rdf:resource="&skos;ConceptScheme"/>
+    </rdf:Description>
     
 
 
@@ -2210,15 +2226,84 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
-    <!-- http://xmlns.com/foaf/0.1/Group -->
-
-    <owl:Class rdf:about="&foaf;Group"/>
-    
-
-
     <!-- http://xmlns.com/foaf/0.1/Person -->
 
     <owl:Class rdf:about="&foaf;Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://fp7-impress.eu/IMPRESSOntology#Black -->
+
+    <owl:NamedIndividual rdf:about="http://fp7-impress.eu/IMPRESSOntology#Black">
+        <rdf:type rdf:resource="http://fp7-impress.eu/Activity/Triage"/>
+        <skos:prefLabel rdf:datatype="&xsd;string">Black</skos:prefLabel>
+        <rdfs:comment rdf:datatype="&xsd;string">Black / Expectant: Severely injured that they will die of their injuries, possibly in hours or days (large-area burns, severe trauma, lethal radiation dose), or in life-threatening medical crisis that they are unlikely to survive given the care available (cardiac arrest, septic shock, severe head or chest wounds); their treatment is usually palliative, such as being given painkillers, to reduce suffering.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://fp7-impress.eu/IMPRESSOntology#TriageSchemeCode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/IMPRESSOntology#Green -->
+
+    <owl:NamedIndividual rdf:about="http://fp7-impress.eu/IMPRESSOntology#Green">
+        <rdf:type rdf:resource="http://fp7-impress.eu/Activity/Triage"/>
+        <skos:prefLabel rdf:datatype="&xsd;string">Green</skos:prefLabel>
+        <rdfs:comment rdf:datatype="&xsd;string">Green / Wait (walking wounded): People will require a doctor&apos;s care in several hours or days but not immediately, may wait for a number of hours or be told to go home and come back the next day (broken bones without compound fractures, many soft tissue injuries).</rdfs:comment>
+        <skos:inScheme rdf:resource="http://fp7-impress.eu/IMPRESSOntology#TriageSchemeCode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/IMPRESSOntology#Red -->
+
+    <owl:NamedIndividual rdf:about="http://fp7-impress.eu/IMPRESSOntology#Red">
+        <rdf:type rdf:resource="http://fp7-impress.eu/Activity/Triage"/>
+        <skos:prefLabel rdf:datatype="&xsd;string">Red</skos:prefLabel>
+        <rdfs:comment rdf:datatype="&xsd;string">Red / Immediate: People require immediate surgery or other life-saving intervention, and have first priority for surgical teams or transport to advanced facilities; they &quot;cannot wait&quot; but are likely to survive with immediate treatment.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://fp7-impress.eu/IMPRESSOntology#TriageSchemeCode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/IMPRESSOntology#TriageSchemeCode -->
+
+    <owl:NamedIndividual rdf:about="http://fp7-impress.eu/IMPRESSOntology#TriageSchemeCode">
+        <rdf:type rdf:resource="http://fp7-impress.eu/Activity/Triage"/>
+        <rdf:type rdf:resource="&skos;ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/IMPRESSOntology#White -->
+
+    <owl:NamedIndividual rdf:about="http://fp7-impress.eu/IMPRESSOntology#White">
+        <rdf:type rdf:resource="http://fp7-impress.eu/Activity/Triage"/>
+        <skos:prefLabel rdf:datatype="&xsd;string">White</skos:prefLabel>
+        <rdfs:comment rdf:datatype="&xsd;string">White / Dismiss (walking wounded): People have minor injuries; first aid and home care are sufficient, a doctor&apos;s care is not required. Injuries are along the lines of cuts and scrapes, or minor burns.</rdfs:comment>
+        <skos:inScheme rdf:resource="http://fp7-impress.eu/IMPRESSOntology#TriageSchemeCode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/IMPRESSOntology#Yellow -->
+
+    <owl:NamedIndividual rdf:about="http://fp7-impress.eu/IMPRESSOntology#Yellow">
+        <rdf:type rdf:resource="http://fp7-impress.eu/Activity/Triage"/>
+        <skos:prefLabel rdf:datatype="&xsd;string">Yellow</skos:prefLabel>
+        <rdfs:comment rdf:datatype="&xsd;string">Yellow / Observation: People&apos;s condition is stable for the moment but requires watching by trained persons and frequent re-triage, will need hospital care (and would receive immediate priority care under &quot;normal&quot; circumstances).</rdfs:comment>
+        <skos:inScheme rdf:resource="http://fp7-impress.eu/IMPRESSOntology#TriageSchemeCode"/>
+    </owl:NamedIndividual>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
     </rdf:Description>

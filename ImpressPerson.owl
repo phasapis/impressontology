@@ -17,7 +17,10 @@
      xmlns:impr="http://fp7-impress.eu/Person/"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="&impr;IMPRESSPerson"/>
+    <owl:Ontology rdf:about="&impr;IMPRESSPerson">
+        <rdfs:comment rdf:datatype="&xsd;string">Danae Vergeti, INTRASOFT S.A.</rdfs:comment>
+        <owl:imports rdf:resource="http://fp7-impress.eu/IMPRESSOntology/skos/"/>
+    </owl:Ontology>
     
 
 
@@ -29,15 +32,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://fp7-impress.eu/Person/ARDS -->
-
-    <owl:Class rdf:about="&impr;ARDS">
-        <rdfs:label>ARDS</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
     
 
 
@@ -119,24 +113,6 @@
     
 
 
-    <!-- http://fp7-impress.eu/Person/Contusionneck -->
-
-    <owl:Class rdf:about="&impr;Contusionneck">
-        <rdfs:label>Contusionneck</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/Contusionoffacescalp -->
-
-    <owl:Class rdf:about="&impr;Contusionoffacescalp">
-        <rdfs:label>Contusionoffacescalp</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
     <!-- http://fp7-impress.eu/Person/Dead -->
 
     <owl:Class rdf:about="&impr;Dead">
@@ -161,15 +137,6 @@
     <owl:Class rdf:about="&impr;Deambulation">
         <rdfs:label>Deambulation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&impr;S.T.A.R.T.Triage"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/Effectofradiationunspecified -->
-
-    <owl:Class rdf:about="&impr;Effectofradiationunspecified">
-        <rdfs:label>Effectofradiationunspecified</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
     </owl:Class>
     
 
@@ -207,15 +174,6 @@
     <owl:Class rdf:about="&impr;FirstAidInjury">
         <rdfs:label>FirstAidInjury</rdfs:label>
         <rdfs:subClassOf rdf:resource="&impr;Injured"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/Fractureofpelvis -->
-
-    <owl:Class rdf:about="&impr;Fractureofpelvis">
-        <rdfs:label>Fractureofpelvis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
     </owl:Class>
     
 
@@ -297,15 +255,6 @@
         <rdfs:label>Injured</rdfs:label>
         <rdfs:subClassOf rdf:resource="&impr;Survivors"/>
         <rdfs:comment>Injured person can be described by ICD10-ICECI. Please provide a range of codes.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/Injurytospleen -->
-
-    <owl:Class rdf:about="&impr;Injurytospleen">
-        <rdfs:label>Injurytospleen</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
     </owl:Class>
     
 
@@ -532,29 +481,11 @@
     
 
 
-    <!-- http://fp7-impress.eu/Person/Subarachnoidsubduralandextraduralhemorrhage -->
-
-    <owl:Class rdf:about="&impr;Subarachnoidsubduralandextraduralhemorrhage">
-        <rdfs:label>Subarachnoidsubduralandextraduralhemorrhage</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
     <!-- http://fp7-impress.eu/Person/Survivors -->
 
     <owl:Class rdf:about="&impr;Survivors">
         <rdfs:label>Survivors</rdfs:label>
         <rdfs:subClassOf rdf:resource="&impr;Humans"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/Ventilatoryimpairment -->
-
-    <owl:Class rdf:about="&impr;Ventilatoryimpairment">
-        <rdfs:label>Ventilatoryimpairment</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
     </owl:Class>
     
 
@@ -568,74 +499,11 @@
     
 
 
-    <!-- http://fp7-impress.eu/Person/abdominalcompartmentsyndrome -->
-
-    <owl:Class rdf:about="&impr;abdominalcompartmentsyndrome">
-        <rdfs:label>abdominalcompartmentsyndrome</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/acutecompartmentsyndrome -->
-
-    <owl:Class rdf:about="&impr;acutecompartmentsyndrome">
-        <rdfs:label>acutecompartmentsyndrome</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/airwayblocked -->
-
-    <owl:Class rdf:about="&impr;airwayblocked">
-        <rdfs:label>airwayblocked</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/airwayobstruction -->
-
-    <owl:Class rdf:about="&impr;airwayobstruction">
-        <rdfs:label>airwayobstruction</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/atelectasia -->
-
-    <owl:Class rdf:about="&impr;atelectasia">
-        <rdfs:label>atelectasia</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
     <!-- http://fp7-impress.eu/Person/bloodpressure -->
 
     <owl:Class rdf:about="&impr;bloodpressure">
         <rdfs:label>bloodpressure</rdfs:label>
         <rdfs:subClassOf rdf:resource="&impr;F.A.S.T.Triage"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/bloodsecretionaspiratedgastrointestinalcontentdislocatedteethordentalprothesesorforeignmateria -->
-
-    <owl:Class rdf:about="&impr;bloodsecretionaspiratedgastrointestinalcontentdislocatedteethordentalprothesesorforeignmateria">
-        <rdfs:label>bloodsecretionaspiratedgastrointestinalcontentdislocatedteethordentalprothesesorforeignmateria</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/braindeficit -->
-
-    <owl:Class rdf:about="&impr;braindeficit">
-        <rdfs:label>braindeficit</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
     </owl:Class>
     
 
@@ -658,210 +526,11 @@
     
 
 
-    <!-- http://fp7-impress.eu/Person/burn -->
-
-    <owl:Class rdf:about="&impr;burn">
-        <rdfs:label>burn</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/burneshock -->
-
-    <owl:Class rdf:about="&impr;burneshock">
-        <rdfs:label>burneshock</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/cardiogenicshock -->
-
-    <owl:Class rdf:about="&impr;cardiogenicshock">
-        <rdfs:label>cardiogenicshock</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/circulatoryshock -->
-
-    <owl:Class rdf:about="&impr;circulatoryshock">
-        <rdfs:label>circulatoryshock</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/closefracture -->
-
-    <owl:Class rdf:about="&impr;closefracture">
-        <rdfs:label>closefracture</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
     <!-- http://fp7-impress.eu/Person/collaboration -->
 
     <owl:Class rdf:about="&impr;collaboration">
         <rdfs:label>collaboration</rdfs:label>
         <rdfs:subClassOf rdf:resource="&impr;S.T.A.R.T.Triage"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/compressionofthemediastinalvein -->
-
-    <owl:Class rdf:about="&impr;compressionofthemediastinalvein">
-        <rdfs:label>compressionofthemediastinalvein</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/damageofinternalorgans -->
-
-    <owl:Class rdf:about="&impr;damageofinternalorgans">
-        <rdfs:label>damageofinternalorgans</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/damageofpelvicorgans -->
-
-    <owl:Class rdf:about="&impr;damageofpelvicorgans">
-        <rdfs:label>damageofpelvicorgans</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/decreaseincirculatoryvolume -->
-
-    <owl:Class rdf:about="&impr;decreaseincirculatoryvolume">
-        <rdfs:label>decreaseincirculatoryvolume</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/diaphragmlesions -->
-
-    <owl:Class rdf:about="&impr;diaphragmlesions">
-        <rdfs:label>diaphragmlesions</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/disidratation -->
-
-    <owl:Class rdf:about="&impr;disidratation">
-        <rdfs:label>disidratation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/dispnea -->
-
-    <owl:Class rdf:about="&impr;dispnea">
-        <rdfs:label>dispnea</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/drowningsyndrome -->
-
-    <owl:Class rdf:about="&impr;drowningsyndrome">
-        <rdfs:label>drowningsyndrome</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/edema -->
-
-    <owl:Class rdf:about="&impr;edema">
-        <rdfs:label>edema</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-        <rdfs:comment>Is this the same as P2.1.1.2.6.2.7 ?</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/ematomi -->
-
-    <owl:Class rdf:about="&impr;ematomi">
-        <rdfs:label>ematomi</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/epistaxis -->
-
-    <owl:Class rdf:about="&impr;epistaxis">
-        <rdfs:label>epistaxis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/externalbleeding -->
-
-    <owl:Class rdf:about="&impr;externalbleeding">
-        <rdfs:label>externalbleeding</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/flailchest -->
-
-    <owl:Class rdf:about="&impr;flailchest">
-        <rdfs:label>flailchest</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/foreignbody -->
-
-    <owl:Class rdf:about="&impr;foreignbody">
-        <rdfs:label>foreignbody</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/functionallossofthelimb -->
-
-    <owl:Class rdf:about="&impr;functionallossofthelimb">
-        <rdfs:label>functionallossofthelimb</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/heartfailure -->
-
-    <owl:Class rdf:about="&impr;heartfailure">
-        <rdfs:label>heartfailure</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/heartinsufficiency -->
-
-    <owl:Class rdf:about="&impr;heartinsufficiency">
-        <rdfs:label>heartinsufficiency</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
     </owl:Class>
     
 
@@ -875,155 +544,11 @@
     
 
 
-    <!-- http://fp7-impress.eu/Person/heatshock -->
-
-    <owl:Class rdf:about="&impr;heatshock">
-        <rdfs:label>heatshock</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/hemothorax -->
-
-    <owl:Class rdf:about="&impr;hemothorax">
-        <rdfs:label>hemothorax</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/hypotension -->
-
-    <owl:Class rdf:about="&impr;hypotension">
-        <rdfs:label>hypotension</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/hypotermia -->
-
-    <owl:Class rdf:about="&impr;hypotermia">
-        <rdfs:label>hypotermia</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/hypoxemia -->
-
-    <owl:Class rdf:about="&impr;hypoxemia">
-        <rdfs:label>hypoxemia</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/inalationofsmoke -->
-
-    <owl:Class rdf:about="&impr;inalationofsmoke">
-        <rdfs:label>inalationofsmoke</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/injurytotherespiratorycentercausedbyshockorlackofoxygen -->
-
-    <owl:Class rdf:about="&impr;injurytotherespiratorycentercausedbyshockorlackofoxygen">
-        <rdfs:label>injurytotherespiratorycentercausedbyshockorlackofoxygen</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/injurytotherespiratorycenterofthebrain -->
-
-    <owl:Class rdf:about="&impr;injurytotherespiratorycenterofthebrain">
-        <rdfs:label>injurytotherespiratorycenterofthebrain</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/internalblingeed -->
-
-    <owl:Class rdf:about="&impr;internalblingeed">
-        <rdfs:label>internalblingeed</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
     <!-- http://fp7-impress.eu/Person/ipoventilation -->
 
     <owl:Class rdf:about="&impr;ipoventilation">
         <rdfs:label>ipoventilation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&impr;F.A.S.T.Triage"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/limbfracture -->
-
-    <owl:Class rdf:about="&impr;limbfracture">
-        <rdfs:label>limbfracture</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/lossofvision -->
-
-    <owl:Class rdf:about="&impr;lossofvision">
-        <rdfs:label>lossofvision</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/lunginjurycausedbytoxicgases -->
-
-    <owl:Class rdf:about="&impr;lunginjurycausedbytoxicgases">
-        <rdfs:label>lunginjurycausedbytoxicgases</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/metabolicacidosis -->
-
-    <owl:Class rdf:about="&impr;metabolicacidosis">
-        <rdfs:label>metabolicacidosis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/motordeficits -->
-
-    <owl:Class rdf:about="&impr;motordeficits">
-        <rdfs:label>motordeficits</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/multipleribfracture -->
-
-    <owl:Class rdf:about="&impr;multipleribfracture">
-        <rdfs:label>multipleribfracture</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/openfracture -->
-
-    <owl:Class rdf:about="&impr;openfracture">
-        <rdfs:label>openfracture</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
     </owl:Class>
     
 
@@ -1037,42 +562,6 @@
     
 
 
-    <!-- http://fp7-impress.eu/Person/paralysis -->
-
-    <owl:Class rdf:about="&impr;paralysis">
-        <rdfs:label>paralysis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/penetratingwound -->
-
-    <owl:Class rdf:about="&impr;penetratingwound">
-        <rdfs:label>penetratingwound</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/perifericedema -->
-
-    <owl:Class rdf:about="&impr;perifericedema">
-        <rdfs:label>perifericedema</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/pneumothorax -->
-
-    <owl:Class rdf:about="&impr;pneumothorax">
-        <rdfs:label>pneumothorax</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
     <!-- http://fp7-impress.eu/Person/presenceofhemorrhage -->
 
     <owl:Class rdf:about="&impr;presenceofhemorrhage">
@@ -1082,182 +571,11 @@
     
 
 
-    <!-- http://fp7-impress.eu/Person/respiratoridepression -->
-
-    <owl:Class rdf:about="&impr;respiratoridepression">
-        <rdfs:label>respiratoridepression</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
     <!-- http://fp7-impress.eu/Person/respiratoryrate -->
 
     <owl:Class rdf:about="&impr;respiratoryrate">
         <rdfs:label>respiratoryrate</rdfs:label>
         <rdfs:subClassOf rdf:resource="&impr;F.A.S.T.Triage"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/resrespiratoryacidosisacidosis -->
-
-    <owl:Class rdf:about="&impr;resrespiratoryacidosisacidosis">
-        <rdfs:label>resrespiratoryacidosisacidosis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/retractedtonguecusedbyreducedmusculartensioninunconsciouspatient -->
-
-    <owl:Class rdf:about="&impr;retractedtonguecusedbyreducedmusculartensioninunconsciouspatient">
-        <rdfs:label>retractedtonguecusedbyreducedmusculartensioninunconsciouspatient</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/riseinintracranialpressure -->
-
-    <owl:Class rdf:about="&impr;riseinintracranialpressure">
-        <rdfs:label>riseinintracranialpressure</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/riseinmediastinalpressure -->
-
-    <owl:Class rdf:about="&impr;riseinmediastinalpressure">
-        <rdfs:label>riseinmediastinalpressure</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/riseinpleuralpressure -->
-
-    <owl:Class rdf:about="&impr;riseinpleuralpressure">
-        <rdfs:label>riseinpleuralpressure</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/spinallesion -->
-
-    <owl:Class rdf:about="&impr;spinallesion">
-        <rdfs:label>spinallesion</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/supraventricularandventriculartachycardiaC83flutterorventricularfibrillation -->
-
-    <owl:Class rdf:about="&impr;supraventricularandventriculartachycardiaC83flutterorventricularfibrillation">
-        <rdfs:label>supraventricularandventriculartachycardiaC83flutterorventricularfibrillation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/tensionpneumothorax -->
-
-    <owl:Class rdf:about="&impr;tensionpneumothorax">
-        <rdfs:label>tensionpneumothorax</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/traumaofthevertebralcolumn -->
-
-    <owl:Class rdf:about="&impr;traumaofthevertebralcolumn">
-        <rdfs:label>traumaofthevertebralcolumn</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/valavularlesions -->
-
-    <owl:Class rdf:about="&impr;valavularlesions">
-        <rdfs:label>valavularlesions</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/Cervicalacceleration-deceleration(CAD) -->
-
-    <owl:Class rdf:about="&impr;Cervicalacceleration-deceleration(CAD)">
-        <rdfs:label>Cervicalacceleration-deceleration(CAD)</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/bluntlesion/contusionofthechestwall -->
-
-    <owl:Class rdf:about="&impr;bluntlesion/contusionofthechestwall">
-        <rdfs:label>bluntlesion/contusionofthechestwall</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/cianosis/hypoxemia -->
-
-    <owl:Class rdf:about="&impr;cianosis/hypoxemia">
-        <rdfs:label>cianosis/hypoxemia</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/concussion/contusionbrain -->
-
-    <owl:Class rdf:about="&impr;concussion/contusionbrain">
-        <rdfs:label>concussion/contusionbrain</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/contaminationbytoxicsubstance/radiation -->
-
-    <owl:Class rdf:about="&impr;contaminationbytoxicsubstance/radiation">
-        <rdfs:label>contaminationbytoxicsubstance/radiation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;PhysiologicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/injuries(bleeding/airleaking)ofthelungs -->
-
-    <owl:Class rdf:about="&impr;injuries(bleeding/airleaking)ofthelungs">
-        <rdfs:label>injuries(bleeding/airleaking)ofthelungs</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/pericardialfluid/tamponation -->
-
-    <owl:Class rdf:about="&impr;pericardialfluid/tamponation">
-        <rdfs:label>pericardialfluid/tamponation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Person/tracheallesion/emphisema(ClassificazionediSchaeferFuhrman) -->
-
-    <owl:Class rdf:about="&impr;tracheallesion/emphisema(ClassificazionediSchaeferFuhrman)">
-        <rdfs:label>tracheallesion/emphisema(ClassificazionediSchaeferFuhrman)</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&impr;AnatomicalLesions"/>
     </owl:Class>
 </rdf:RDF>
 

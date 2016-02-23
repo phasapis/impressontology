@@ -1,0 +1,339 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://purl.org/wai#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://purl.org/wai#">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="dct" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="wai" IRI="http://purl.org/wai#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dct:creator"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Luis Polo</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dct:contributor"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Pablo López</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dct:rights"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">(c) TreeLogic, 2009</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dct:contributor"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Marcos Sacristán</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dct:creator"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ivan Mínguez</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/wai.owl</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dct:date"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2010-10-11</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dct:contributor"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Diego Berrueta</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dct:title"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Roles and Profiles Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dct:contributor"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Emilio Rubiera</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="Context"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Profile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Role"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="atContext"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="participates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="personalizes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="plays"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="profiles"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="requires"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="specializes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isActive"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dct:contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dct:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dct:date"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dct:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dct:rights"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dct:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    </Declaration>
+    <DisjointClasses>
+        <Class IRI="Profile"/>
+        <Class IRI="Role"/>
+    </DisjointClasses>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="specializes"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="atContext"/>
+        <Class IRI="Profile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="participates"/>
+        <Class IRI="Profile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="personalizes"/>
+        <Class IRI="Profile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="plays"/>
+        <Class abbreviatedIRI="foaf:Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="profiles"/>
+        <Class abbreviatedIRI="foaf:Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="requires"/>
+        <Class IRI="Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="specializes"/>
+        <Class IRI="Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="atContext"/>
+        <Class IRI="Context"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="personalizes"/>
+        <Class IRI="Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="plays"/>
+        <Class IRI="Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="profiles"/>
+        <Class IRI="Profile"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="requires"/>
+        <Class IRI="Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="specializes"/>
+        <Class IRI="Role"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="plays"/>
+            <ObjectProperty IRI="requires"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="plays"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="plays"/>
+            <ObjectProperty IRI="specializes"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="plays"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="profiles"/>
+            <ObjectProperty IRI="participates"/>
+        </ObjectPropertyChain>
+        <ObjectProperty abbreviatedIRI="foaf:member"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="profiles"/>
+            <ObjectProperty IRI="personalizes"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="plays"/>
+    </SubObjectPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="isActive"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="isActive"/>
+        <Class IRI="Profile"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="isActive"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Context</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Contexts are similar to situations or state of affairs providing interpretation coordinates for profiles. In the most simple case, these coordinates are just geographical/spatial or temporal coordinates. WAI does not impose a fixed definition of context. It is deliberately wide in order to enable third-parties the adequation of the meaning of context according to their modeling needs and requirements.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Context</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Context</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Profile</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A profile represents a particular person playing a given role. In the literature it is also known as a &quot;qua-individual&quot;. WAI extends the meaning of profile to capture &quot;person-as-role&quot;, &quot;person-at-context&quot; and &quot;person-in-community&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Profile</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Profile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Role</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A property that can be predicated of a person. In WAI ontology, roles are reified as first order individuals and relations between roles and players are expressed by means of the wai:plays property. WAI does not impose any subclassification of roles. The concept is open to be refined according to domain or application requirements.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Role</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>atContext</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">This property enables to relate a profile with a given context (geographical, temporal, spatial, social, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>atContext</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">at context</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isActive</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">This property allows to specify which is the user profile that is active, 
+given a interaction between two applications.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isActive</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">is active</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>participates</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">This property encodes the participation relation between profiles and the communities they are member of.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>participates</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">participates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>personalizes</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A role is personalized by means of a profile, which wrap the role in the identity of the person behind the profile.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>personalizes</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">personalizes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>plays</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">This property relates roles and their players, who can be any foaf:Agent (a person, a group, etc.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>plays</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">plays</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>profiles</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">This property relates people and the featured profiles.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>profiles</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">profiles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>requires</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">This property relates roles and their requisites, i.e. other roles.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>requires</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">requires</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>specializes</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">This property allows to express hierarchies of roles, through of role specialization: if role A specializes role B, and B specializes C, then role A specializes role C.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>specializes</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">specializes</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

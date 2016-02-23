@@ -43,15 +43,6 @@
     
 
 
-    <!-- http://fp7-impress.eu/Activity/Black -->
-
-    <owl:Class rdf:about="&imprActivity;Black">
-        <rdfs:label>Black</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&imprActivity;Triage"/>
-    </owl:Class>
-    
-
-
     <!-- http://fp7-impress.eu/Activity/CBRNE -->
 
     <owl:Class rdf:about="&imprActivity;CBRNE">
@@ -131,15 +122,6 @@
     <owl:Class rdf:about="&imprActivity;FirstAidServices">
         <rdfs:label>FirstAidServices</rdfs:label>
         <rdfs:subClassOf rdf:resource="&imprActivity;Field"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Activity/Green -->
-
-    <owl:Class rdf:about="&imprActivity;Green">
-        <rdfs:label>Green</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&imprActivity;Triage"/>
     </owl:Class>
     
 
@@ -249,15 +231,6 @@
     
 
 
-    <!-- http://fp7-impress.eu/Activity/Red -->
-
-    <owl:Class rdf:about="&imprActivity;Red">
-        <rdfs:label>Red</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&imprActivity;Triage"/>
-    </owl:Class>
-    
-
-
     <!-- http://fp7-impress.eu/Activity/RemovingObstacles -->
 
     <owl:Class rdf:about="&imprActivity;RemovingObstacles">
@@ -362,24 +335,6 @@
     <owl:Class rdf:about="&imprActivity;VictimRetruction">
         <rdfs:label>VictimRetruction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&imprActivity;FireServices"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Activity/White -->
-
-    <owl:Class rdf:about="&imprActivity;White">
-        <rdfs:label>White</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&imprActivity;Triage"/>
-    </owl:Class>
-    
-
-
-    <!-- http://fp7-impress.eu/Activity/Yellow -->
-
-    <owl:Class rdf:about="&imprActivity;Yellow">
-        <rdfs:label>Yellow</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&imprActivity;Triage"/>
     </owl:Class>
     
 

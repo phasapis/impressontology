@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://fp7-impress.eu/IMPRESSOntology/skos/" uri="AnatomicalLesionsCodelist.owl"/>
+    <uri id="Imports Wizard Entry" name="http://fp7-impress.eu/IMPRESSOntology/skos/" uri="PhysiologicalLesionsCodelist.owl"/>
+    <uri id="Imports Wizard Entry" name="http://fp7-impress.eu/IMPRESSOntology/skos/" uri="AnatomicalLesionsCodelist.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.w3.org/2004/02/skos/core" uri="http://www.w3.org/2004/02/skos/core#"/>
     <uri id="Imports Wizard Entry" name="http://fp7-impress.eu/Resource/IMPRESSResource" uri="IMPRESS_Resource.owl"/>
     <uri id="Imports Wizard Entry" name="http://fp7-impress.eu/Person/IMPRESSPerson" uri="ImpressPerson.owl"/>
     <uri id="Imports Wizard Entry" name="http://fp7-impress.eu/IMPRESSOntology" uri="IMPRESS_Activity.owl"/>
     <uri id="Imports Wizard Entry" name="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/weather/WeatherOntology_1.03.owl" uri="WeatherOntology.owl"/>
     <uri id="Imports Wizard Entry" name="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/weather/WeatherOntology_1.03.owl" uri="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1455279772561" name="http://fp7-impress.eu/Activity/" uri="IMPRESS_Activity.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1455279772561" name="http://fp7-impress.eu/EOPHC/" uri="obsolete/IMPRESS_EOPHC_ok.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1455279772561" name="http://fp7-impress.eu/IMPRESSOntology" uri="IMPRESSOntology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1455279772561" name="http://fp7-impress.eu/Person/" uri="ImpressPerson.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1455279772561" name="http://fp7-impress.eu/Resource/" uri="IMPRESS_Resource.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1455279772561" name="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl" uri="WeatherOntology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1455279772561" name="shadowed:http://fp7-impress.eu/Activity/" uri="obsolete/IMPRESS_Activity_ok.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1455279772561" name="shadowed:http://fp7-impress.eu/Person/" uri="obsolete/IMPRESS_Person_ok.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1456222453050" name="http://fp7-impress.eu/Activity/" uri="IMPRESS_Activity.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1456222453050" name="http://fp7-impress.eu/EOPHC/" uri="PhysiologicalLesionsCodelist.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1456222453050" name="http://fp7-impress.eu/IMPRESSEDXL" uri="IMPRESSEDXL.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1456222453050" name="http://fp7-impress.eu/IMPRESSOntology" uri="IMPRESSOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1456222453050" name="http://fp7-impress.eu/Person/" uri="ImpressPerson.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1456222453050" name="http://fp7-impress.eu/Resource/" uri="IMPRESS_Resource.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1456222453050" name="http://purl.org/wai#" uri="WAI.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1456222453050" name="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl" uri="WeatherOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1456222453050" name="shadowed:http://fp7-impress.eu/Activity/" uri="obsolete/IMPRESS_Activity_ok.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1456222453050" name="shadowed:http://fp7-impress.eu/EOPHC/" uri="obsolete/IMPRESS_EOPHC_ok.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1456222453050" name="shadowed:http://fp7-impress.eu/Person/" uri="obsolete/IMPRESS_Person_ok.owl"/>
     </group>
 </catalog>

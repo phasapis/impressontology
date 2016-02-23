@@ -1,0 +1,396 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY imprphysio "http://fp7-impress.eu/EOPHC/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://fp7-impress.eu/EOPHC/"
+     xml:base="http://fp7-impress.eu/EOPHC/"
+     xmlns:imprphysio="http://fp7-impress.eu/EOPHC/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://fp7-impress.eu/IMPRESSOntology/skos/physio">
+        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/ARDS -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;ARDS">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">ARDS</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/AbdominalCompartmentSyndrome -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;AbdominalCompartmentSyndrome">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">AbdominalCompartmentSyndrome</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/AcuteCompartmentSyndrome -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;AcuteCompartmentSyndrome">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">AcuteCompartmentSyndrome</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/AirwayBlocked -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;AirwayBlocked">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">AirwayBlocked</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/BrainDeficit -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;BrainDeficit">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">BrainDeficit</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/BurneShock -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;BurneShock">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">BurneShock</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/CAD -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;CAD">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <rdfs:comment>Cervical acceleration-deceleration (CAD)</rdfs:comment>
+        <skos:prefLabel xml:lang="en">CAD</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/CardiogenicShock -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;CardiogenicShock">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">CardiogenicShock</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/CirculatoryShock -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;CirculatoryShock">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">CirculatoryShock</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/Disidratation -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;Disidratation">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Disidratation</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/Dispnea -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;Dispnea">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Dispnea</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/FlailChest -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;FlailChest">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">FlailChest</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/FunctionalLossOfTheLimb -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;FunctionalLossOfTheLimb">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">FunctionalLossOfTheLimb</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/HeartFailure -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;HeartFailure">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">HeartFailure</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/Hypotension -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;Hypotension">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Hypotension</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/Hypotermia -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;Hypotermia">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Hypotermia</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/Hypoxemia -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;Hypoxemia">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Hypoxemia</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/InternalOrgansDamage -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;InternalOrgansDamage">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">InternalOrgansDamage</skos:prefLabel>
+        <rdfs:comment>damage of internal organs</rdfs:comment>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/LossOfVision -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;LossOfVision">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">LossOfVision</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/MediastinalPressure -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;MediastinalPressure">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <rdfs:comment>rise in mediastinal pressure</rdfs:comment>
+        <skos:prefLabel xml:lang="en">MediastinalPressure</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/MediastinalVeinCompression -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;MediastinalVeinCompression">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">MediastinalVeinCompression</skos:prefLabel>
+        <rdfs:comment>compression of the mediastinal vein</rdfs:comment>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/MetabolicAcidosis -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;MetabolicAcidosis">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">MetabolicAcidosis</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/MotorDeficits -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;MotorDeficits">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">MotorDeficits</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/Paralysis -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;Paralysis">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Paralysis</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/PelvicOrgansDamage -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;PelvicOrgansDamage">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">PelvicOrgansDamage</skos:prefLabel>
+        <rdfs:comment>damage of pelvic organs</rdfs:comment>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/PerifericEdema -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;PerifericEdema">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">PerifericEdema</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/PhysiologicalLesionsScheme -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;PhysiologicalLesionsScheme">
+        <rdf:type rdf:resource="&skos;ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/RespiratoriDepression -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;RespiratoriDepression">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">RespiratoriDepression</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/ResrespiratoryAcidosisacidosis -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;ResrespiratoryAcidosisacidosis">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">ResrespiratoryAcidosisacidosis</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/RiseInIntracranialPressure -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;RiseInIntracranialPressure">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">RiseInIntracranialPressure</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/RiseInPleuralPressure -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;RiseInPleuralPressure">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">RiseInPleuralPressure</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/ToxicContamination -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;ToxicContamination">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <rdfs:comment>contamination by toxic substance/radiation</rdfs:comment>
+        <skos:prefLabel xml:lang="en">ToxicContamination</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/VentilatoryImpairment -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;VentilatoryImpairment">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">VentilatoryImpairment</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/VolumeDecrease -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;VolumeDecrease">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <rdfs:comment>decrease in circulatory volume</rdfs:comment>
+        <skos:prefLabel xml:lang="en">VolumeDecrease</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/EOPHC/Cianosis/hypoxemia -->
+
+    <owl:NamedIndividual rdf:about="&imprphysio;Cianosis/hypoxemia">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Cianosis/hypoxemia</skos:prefLabel>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+
