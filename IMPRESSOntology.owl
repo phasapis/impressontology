@@ -279,6 +279,15 @@ above the local reference ellipsoid).</rdfs:comment>
     
 
 
+    <!-- http://fp7-impress.eu/IMPRESSOntology#eventTimeDateOccured -->
+
+    <owl:DatatypeProperty rdf:about="http://fp7-impress.eu/IMPRESSOntology#eventTimeDateOccured">
+        <rdfs:domain rdf:resource="http://fp7-impress.eu/IMPRESSOntology#Timeslice"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -339,6 +348,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:label>Air</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://fp7-impress.eu/EOPHC/Transportation"/>
         <rdfs:subClassOf rdf:resource="http://fp7-impress.eu/EOPHC/Contamination/Pollution"/>
+        <owl:backwardCompatibleWith rdf:datatype="&xsd;string">TSO 1.1: /EVENT/EGEO/TYPE/AIR</owl:backwardCompatibleWith>
         <rdfs:comment>An EOPHC involving a technological event in air transportation</rdfs:comment>
     </owl:Class>
     
@@ -1172,6 +1182,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:label>Other</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://fp7-impress.eu/EOPHC/Industry"/>
         <rdfs:subClassOf rdf:resource="http://fp7-impress.eu/EOPHC/Transportation"/>
+        <owl:backwardCompatibleWith rdf:datatype="&xsd;string">TSO 1.1: /EVENT/ETYPE/LOCTYPE/OTH</owl:backwardCompatibleWith>
     </owl:Class>
     
 
@@ -1271,6 +1282,7 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:Class rdf:about="http://fp7-impress.eu/EOPHC/Rail">
         <rdfs:label>Rail</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://fp7-impress.eu/EOPHC/Transportation"/>
+        <owl:backwardCompatibleWith rdf:datatype="&xsd;string">TSO 1.1: /EVENT/ETYPE/LOCTYPE/RAIL</owl:backwardCompatibleWith>
         <rdfs:comment>An EOPHC involving a technological event in railway transportation</rdfs:comment>
     </owl:Class>
     
@@ -1318,6 +1330,7 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:Class rdf:about="http://fp7-impress.eu/EOPHC/Road">
         <rdfs:label>Road</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://fp7-impress.eu/EOPHC/Transportation"/>
+        <owl:backwardCompatibleWith rdf:datatype="&xsd;string">TSO 1.1: /EVENT/ETYPE/LOCTYPE/ROAD</owl:backwardCompatibleWith>
         <rdfs:comment>An EOPHC involving a technological event in road transportation</rdfs:comment>
     </owl:Class>
     
@@ -1888,6 +1901,15 @@ above the local reference ellipsoid).</rdfs:comment>
     
 
 
+    <!-- http://fp7-impress.eu/IMPRESSOntology#Witness -->
+
+    <owl:Class rdf:about="http://fp7-impress.eu/IMPRESSOntology#Witness">
+        <rdfs:subClassOf rdf:resource="http://fp7-impress.eu/Person/Noninjured"/>
+        <owl:backwardCompatibleWith rdf:datatype="&xsd;string">TSO 1.1:  /EVENT/ETYPE/ACTOR/WTN</owl:backwardCompatibleWith>
+    </owl:Class>
+    
+
+
     <!-- http://fp7-impress.eu/Person/IMPRESSPerson -->
 
     <owl:Class rdf:about="http://fp7-impress.eu/Person/IMPRESSPerson">
@@ -2304,9 +2326,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
         <rdfs:comment rdf:datatype="&xsd;string">Yellow / Observation: People&apos;s condition is stable for the moment but requires watching by trained persons and frequent re-triage, will need hospital care (and would receive immediate priority care under &quot;normal&quot; circumstances).</rdfs:comment>
         <skos:inScheme rdf:resource="http://fp7-impress.eu/IMPRESSOntology#TriageSchemeCode"/>
     </owl:NamedIndividual>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
-    </rdf:Description>
     
 
 
