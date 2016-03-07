@@ -53,6 +53,14 @@
     
 
 
+    <!-- http://fp7-impress.eu/IMPRESSOntology#backwardCompatibleTSOCode -->
+
+    <owl:AnnotationProperty rdf:about="http://fp7-impress.eu/IMPRESSOntology#backwardCompatibleTSOCode">
+        <rdfs:subPropertyOf rdf:resource="&owl;backwardCompatibleWith"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/date -->
 
     <owl:AnnotationProperty rdf:about="&dc;date"/>
@@ -348,7 +356,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:label>Air</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://fp7-impress.eu/EOPHC/Transportation"/>
         <rdfs:subClassOf rdf:resource="http://fp7-impress.eu/EOPHC/Contamination/Pollution"/>
-        <owl:backwardCompatibleWith rdf:datatype="&xsd;string">TSO 1.1: /EVENT/EGEO/TYPE/AIR</owl:backwardCompatibleWith>
+        <backwardCompatibleTSOCode rdf:datatype="&xsd;string">/EVENT/EGEO/TYPE/AIR</backwardCompatibleTSOCode>
         <rdfs:comment>An EOPHC involving a technological event in air transportation</rdfs:comment>
     </owl:Class>
     
@@ -1182,7 +1190,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:label>Other</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://fp7-impress.eu/EOPHC/Industry"/>
         <rdfs:subClassOf rdf:resource="http://fp7-impress.eu/EOPHC/Transportation"/>
-        <owl:backwardCompatibleWith rdf:datatype="&xsd;string">TSO 1.1: /EVENT/ETYPE/LOCTYPE/OTH</owl:backwardCompatibleWith>
+        <backwardCompatibleTSOCode rdf:datatype="&xsd;string">/EVENT/ETYPE/LOCTYPE/OTH</backwardCompatibleTSOCode>
     </owl:Class>
     
 
@@ -1282,7 +1290,7 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:Class rdf:about="http://fp7-impress.eu/EOPHC/Rail">
         <rdfs:label>Rail</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://fp7-impress.eu/EOPHC/Transportation"/>
-        <owl:backwardCompatibleWith rdf:datatype="&xsd;string">TSO 1.1: /EVENT/ETYPE/LOCTYPE/RAIL</owl:backwardCompatibleWith>
+        <backwardCompatibleTSOCode rdf:datatype="&xsd;string">/EVENT/ETYPE/LOCTYPE/RAIL</backwardCompatibleTSOCode>
         <rdfs:comment>An EOPHC involving a technological event in railway transportation</rdfs:comment>
     </owl:Class>
     
@@ -1330,7 +1338,7 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:Class rdf:about="http://fp7-impress.eu/EOPHC/Road">
         <rdfs:label>Road</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://fp7-impress.eu/EOPHC/Transportation"/>
-        <owl:backwardCompatibleWith rdf:datatype="&xsd;string">TSO 1.1: /EVENT/ETYPE/LOCTYPE/ROAD</owl:backwardCompatibleWith>
+        <backwardCompatibleTSOCode rdf:datatype="&xsd;string">/EVENT/ETYPE/LOCTYPE/ROAD</backwardCompatibleTSOCode>
         <rdfs:comment>An EOPHC involving a technological event in road transportation</rdfs:comment>
     </owl:Class>
     
