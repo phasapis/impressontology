@@ -34,8 +34,10 @@
         <owl:imports rdf:resource="http://fp7-impress.eu/IMPRESSEDXL"/>
         <owl:imports rdf:resource="http://fp7-impress.eu/Activity/"/>
         <owl:imports rdf:resource="&impress;skos/physio"/>
+        <owl:imports rdf:resource="&impress;skos/publicbuilding/palermo"/>
         <owl:imports rdf:resource="http://fp7-impress.eu/Person/IMPRESSPerson"/>
         <owl:imports rdf:resource="http://fp7-impress.eu/Resource/IMPRESSResource"/>
+        <owl:imports rdf:resource="http://fp7-impress.eu/skos/civilprotection/palermo"/>
         <owl:imports rdf:resource="http://purl.org/wai#"/>
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <owl:imports rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/weather/WeatherOntology_1.03.owl"/>
@@ -2343,6 +2345,70 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
         <rdfs:comment rdf:datatype="&xsd;string">Yellow / Observation: People&apos;s condition is stable for the moment but requires watching by trained persons and frequent re-triage, will need hospital care (and would receive immediate priority care under &quot;normal&quot; circumstances).</rdfs:comment>
         <skos:inScheme rdf:resource="http://fp7-impress.eu/IMPRESSOntology#TriageSchemeCode"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://fp7-impress.eu/IMPRESSOntology/skos/publicbuilding/palermo#AdministrativeOfficesPalermoMunicipality -->
+
+    <rdf:Description rdf:about="&impress;skos/publicbuilding/palermo#AdministrativeOfficesPalermoMunicipality">
+        <rdf:type rdf:resource="http://fp7-impress.eu/Resource/IMPRESSResource#PublicBuilding"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://fp7-impress.eu/IMPRESSOntology/skos/publicbuilding/palermo#NauticalInstituteGioeniTrabiaPalermo -->
+
+    <rdf:Description rdf:about="&impress;skos/publicbuilding/palermo#NauticalInstituteGioeniTrabiaPalermo">
+        <rdf:type rdf:resource="http://fp7-impress.eu/Resource/IMPRESSResource#PublicBuilding"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://fp7-impress.eu/IMPRESSOntology/skos/publicbuilding/palermo#OfficeHeadUniversityPalermo -->
+
+    <rdf:Description rdf:about="&impress;skos/publicbuilding/palermo#OfficeHeadUniversityPalermo">
+        <rdf:type rdf:resource="http://fp7-impress.eu/Resource/IMPRESSResource#PublicBuilding"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://fp7-impress.eu/IMPRESSOntology/skos/publicbuilding/palermo#RegionalAdministrativeCourtSicily -->
+
+    <rdf:Description rdf:about="&impress;skos/publicbuilding/palermo#RegionalAdministrativeCourtSicily">
+        <rdf:type rdf:resource="http://fp7-impress.eu/Resource/IMPRESSResource#PublicBuilding"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://fp7-impress.eu/skos/civilprotection/palermo#CommandFinancialPolice -->
+
+    <rdf:Description rdf:about="http://fp7-impress.eu/skos/civilprotection/palermo#CommandFinancialPolice">
+        <rdf:type rdf:resource="http://fp7-impress.eu/Resource/CivilProtection"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://fp7-impress.eu/skos/civilprotection/palermo#PalermoCoastGuard -->
+
+    <rdf:Description rdf:about="http://fp7-impress.eu/skos/civilprotection/palermo#PalermoCoastGuard">
+        <rdf:type rdf:resource="http://fp7-impress.eu/Resource/CivilProtection"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://fp7-impress.eu/skos/civilprotection/palermo#PalermoItalianRedCrossProvincialCommand -->
+
+    <rdf:Description rdf:about="http://fp7-impress.eu/skos/civilprotection/palermo#PalermoItalianRedCrossProvincialCommand">
+        <rdf:type rdf:resource="http://fp7-impress.eu/Resource/CivilProtection"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://fp7-impress.eu/skos/civilprotection/palermo#PalermoMunicipality -->
+
+    <rdf:Description rdf:about="http://fp7-impress.eu/skos/civilprotection/palermo#PalermoMunicipality">
+        <rdf:type rdf:resource="http://fp7-impress.eu/Resource/CivilProtection"/>
+    </rdf:Description>
     
 
 

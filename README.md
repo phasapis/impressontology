@@ -29,12 +29,16 @@
 - added and fixed weather ontology to match better WARSYS
 - edxl have addition (partially only stuff we needed now)
 
+###### 5 May 2016
+
+- fixed typos
+- added codelists related to Palermo demo (agencies and public buildings)
+- added temporal aspect
+- added roles
+
 ###### Next steps
 
-- need to add properties for data access (apart from roles coming from WAI)
-- add agencies of palermo demo
 - TSO codes
-- check temporal aspect suggestion from Geert
 - add categories of vehicles, hospitals from pilots (allegedly to be provided in a few days)
 - WHO classification
 

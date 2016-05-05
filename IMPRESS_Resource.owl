@@ -1525,6 +1525,14 @@
     
 
 
+    <!-- http://fp7-impress.eu/Resource/IMPRESSResource#PublicBuilding -->
+
+    <owl:Class rdf:about="&imprResource;IMPRESSResource#PublicBuilding">
+        <rdfs:subClassOf rdf:resource="&imprResource;Buildings"/>
+    </owl:Class>
+    
+
+
     <!-- http://fp7-impress.eu/Resource/SpecializedEquipment(CT-scan) -->
 
     <owl:Class rdf:about="&imprResource;SpecializedEquipment(CT-scan)">
