@@ -36,3 +36,5 @@
 - TSO codes
 - check temporal aspect suggestion from Geert
 - add categories of vehicles, hospitals from pilots (allegedly to be provided in a few days)
+- WHO classification
+

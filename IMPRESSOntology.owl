@@ -28,11 +28,12 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://fp7-impress.eu/IMPRESSOntology">
-        <terms:creator rdf:datatype="&xsd;string">Danae Vergeti, INTRASOFT S.A.</terms:creator>
+        <terms:creator rdf:datatype="&xsd;string">Danae Vergeti, Panagiotis Hasapis, INTRASOFT S.A.</terms:creator>
         <terms:title rdf:datatype="&xsd;string">IMPRESS Reference Semantic Model</terms:title>
         <terms:description rdf:datatype="&xsd;string">The IMPRESS Reference Semantic Model is a model that describes the domain of major disaster and response services. It is comprised by several modules dedicated to address specific needs.</terms:description>
         <owl:imports rdf:resource="http://fp7-impress.eu/IMPRESSEDXL"/>
         <owl:imports rdf:resource="http://fp7-impress.eu/Activity/"/>
+        <owl:imports rdf:resource="&impress;skos/physio"/>
         <owl:imports rdf:resource="http://fp7-impress.eu/Person/IMPRESSPerson"/>
         <owl:imports rdf:resource="http://fp7-impress.eu/Resource/IMPRESSResource"/>
         <owl:imports rdf:resource="http://purl.org/wai#"/>
@@ -2092,6 +2093,14 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:label>Open</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://fp7-impress.eu/Resource/SportsAreas"/>
     </owl:Class>
+    
+
+
+    <!-- http://fp7-impress.eu/Resource/Organizations -->
+
+    <rdf:Description rdf:about="http://fp7-impress.eu/Resource/Organizations">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    </rdf:Description>
     
 
 

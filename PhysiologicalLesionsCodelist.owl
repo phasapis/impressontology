@@ -41,7 +41,7 @@
     <owl:NamedIndividual rdf:about="&imprphysio;ARDS">
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">ARDS</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -51,7 +51,7 @@
     <owl:NamedIndividual rdf:about="&imprphysio;AbdominalCompartmentSyndrome">
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">AbdominalCompartmentSyndrome</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -61,7 +61,7 @@
     <owl:NamedIndividual rdf:about="&imprphysio;AcuteCompartmentSyndrome">
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">AcuteCompartmentSyndrome</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -71,7 +71,7 @@
     <owl:NamedIndividual rdf:about="&imprphysio;AirwayBlocked">
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">AirwayBlocked</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -81,7 +81,7 @@
     <owl:NamedIndividual rdf:about="&imprphysio;BrainDeficit">
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">BrainDeficit</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -91,7 +91,7 @@
     <owl:NamedIndividual rdf:about="&imprphysio;BurneShock">
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">BurneShock</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -102,7 +102,7 @@
         <rdf:type rdf:resource="&skos;Concept"/>
         <rdfs:comment>Cervical acceleration-deceleration (CAD)</rdfs:comment>
         <skos:prefLabel xml:lang="en">CAD</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -112,7 +112,7 @@
     <owl:NamedIndividual rdf:about="&imprphysio;CardiogenicShock">
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">CardiogenicShock</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -122,7 +122,7 @@
     <owl:NamedIndividual rdf:about="&imprphysio;CirculatoryShock">
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">CirculatoryShock</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -132,7 +132,7 @@
     <owl:NamedIndividual rdf:about="&imprphysio;Disidratation">
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">Disidratation</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -142,7 +142,7 @@
     <owl:NamedIndividual rdf:about="&imprphysio;Dispnea">
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">Dispnea</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -152,7 +152,7 @@
     <owl:NamedIndividual rdf:about="&imprphysio;FlailChest">
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">FlailChest</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -162,7 +162,7 @@
     <owl:NamedIndividual rdf:about="&imprphysio;FunctionalLossOfTheLimb">
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">FunctionalLossOfTheLimb</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -172,7 +172,7 @@
     <owl:NamedIndividual rdf:about="&imprphysio;HeartFailure">
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">HeartFailure</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -182,7 +182,7 @@
     <owl:NamedIndividual rdf:about="&imprphysio;Hypotension">
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">Hypotension</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -192,7 +192,7 @@
     <owl:NamedIndividual rdf:about="&imprphysio;Hypotermia">
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">Hypotermia</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -202,7 +202,7 @@
     <owl:NamedIndividual rdf:about="&imprphysio;Hypoxemia">
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">Hypoxemia</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -213,7 +213,7 @@
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">InternalOrgansDamage</skos:prefLabel>
         <rdfs:comment>damage of internal organs</rdfs:comment>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -223,7 +223,7 @@
     <owl:NamedIndividual rdf:about="&imprphysio;LossOfVision">
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">LossOfVision</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -234,7 +234,7 @@
         <rdf:type rdf:resource="&skos;Concept"/>
         <rdfs:comment>rise in mediastinal pressure</rdfs:comment>
         <skos:prefLabel xml:lang="en">MediastinalPressure</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -245,7 +245,7 @@
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">MediastinalVeinCompression</skos:prefLabel>
         <rdfs:comment>compression of the mediastinal vein</rdfs:comment>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -255,7 +255,7 @@
     <owl:NamedIndividual rdf:about="&imprphysio;MetabolicAcidosis">
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">MetabolicAcidosis</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -265,7 +265,7 @@
     <owl:NamedIndividual rdf:about="&imprphysio;MotorDeficits">
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">MotorDeficits</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -275,7 +275,7 @@
     <owl:NamedIndividual rdf:about="&imprphysio;Paralysis">
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">Paralysis</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -286,7 +286,7 @@
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">PelvicOrgansDamage</skos:prefLabel>
         <rdfs:comment>damage of pelvic organs</rdfs:comment>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -296,14 +296,14 @@
     <owl:NamedIndividual rdf:about="&imprphysio;PerifericEdema">
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">PerifericEdema</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://fp7-impress.eu/EOPHC/PhysiologicalLesionsScheme -->
+    <!-- http://fp7-impress.eu/EOPHC/PhysiologicalLesionsSchemeCode -->
 
-    <owl:NamedIndividual rdf:about="&imprphysio;PhysiologicalLesionsScheme">
+    <owl:NamedIndividual rdf:about="&imprphysio;PhysiologicalLesionsSchemeCode">
         <rdf:type rdf:resource="&skos;ConceptScheme"/>
     </owl:NamedIndividual>
     
@@ -314,7 +314,7 @@
     <owl:NamedIndividual rdf:about="&imprphysio;RespiratoriDepression">
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">RespiratoriDepression</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -324,7 +324,7 @@
     <owl:NamedIndividual rdf:about="&imprphysio;ResrespiratoryAcidosisacidosis">
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">ResrespiratoryAcidosisacidosis</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -334,7 +334,7 @@
     <owl:NamedIndividual rdf:about="&imprphysio;RiseInIntracranialPressure">
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">RiseInIntracranialPressure</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -344,7 +344,7 @@
     <owl:NamedIndividual rdf:about="&imprphysio;RiseInPleuralPressure">
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">RiseInPleuralPressure</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -355,7 +355,7 @@
         <rdf:type rdf:resource="&skos;Concept"/>
         <rdfs:comment>contamination by toxic substance/radiation</rdfs:comment>
         <skos:prefLabel xml:lang="en">ToxicContamination</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -365,7 +365,7 @@
     <owl:NamedIndividual rdf:about="&imprphysio;VentilatoryImpairment">
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">VentilatoryImpairment</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -376,7 +376,7 @@
         <rdf:type rdf:resource="&skos;Concept"/>
         <rdfs:comment>decrease in circulatory volume</rdfs:comment>
         <skos:prefLabel xml:lang="en">VolumeDecrease</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
     
 
@@ -386,7 +386,7 @@
     <owl:NamedIndividual rdf:about="&imprphysio;Cianosis/hypoxemia">
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:prefLabel xml:lang="en">Cianosis/hypoxemia</skos:prefLabel>
-        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsScheme"/>
+        <skos:inScheme rdf:resource="&imprphysio;PhysiologicalLesionsSchemeCode"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
