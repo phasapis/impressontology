@@ -38,6 +38,7 @@
         <owl:imports rdf:resource="http://fp7-impress.eu/Person/IMPRESSPerson"/>
         <owl:imports rdf:resource="http://fp7-impress.eu/Resource/IMPRESSResource"/>
         <owl:imports rdf:resource="http://fp7-impress.eu/skos/civilprotection/palermo"/>
+        <owl:imports rdf:resource="http://fp7-impress.eu/skos/vehicles/palermo"/>
         <owl:imports rdf:resource="http://purl.org/wai#"/>
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <owl:imports rdf:resource="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/weather/WeatherOntology_1.03.owl"/>
@@ -2350,33 +2351,33 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <!-- http://fp7-impress.eu/IMPRESSOntology/skos/publicbuilding/palermo#AdministrativeOfficesPalermoMunicipality -->
 
-    <rdf:Description rdf:about="&impress;skos/publicbuilding/palermo#AdministrativeOfficesPalermoMunicipality">
+    <owl:NamedIndividual rdf:about="&impress;skos/publicbuilding/palermo#AdministrativeOfficesPalermoMunicipality">
         <rdf:type rdf:resource="http://fp7-impress.eu/Resource/IMPRESSResource#PublicBuilding"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://fp7-impress.eu/IMPRESSOntology/skos/publicbuilding/palermo#NauticalInstituteGioeniTrabiaPalermo -->
 
-    <rdf:Description rdf:about="&impress;skos/publicbuilding/palermo#NauticalInstituteGioeniTrabiaPalermo">
+    <owl:NamedIndividual rdf:about="&impress;skos/publicbuilding/palermo#NauticalInstituteGioeniTrabiaPalermo">
         <rdf:type rdf:resource="http://fp7-impress.eu/Resource/IMPRESSResource#PublicBuilding"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://fp7-impress.eu/IMPRESSOntology/skos/publicbuilding/palermo#OfficeHeadUniversityPalermo -->
 
-    <rdf:Description rdf:about="&impress;skos/publicbuilding/palermo#OfficeHeadUniversityPalermo">
+    <owl:NamedIndividual rdf:about="&impress;skos/publicbuilding/palermo#OfficeHeadUniversityPalermo">
         <rdf:type rdf:resource="http://fp7-impress.eu/Resource/IMPRESSResource#PublicBuilding"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://fp7-impress.eu/IMPRESSOntology/skos/publicbuilding/palermo#RegionalAdministrativeCourtSicily -->
 
-    <rdf:Description rdf:about="&impress;skos/publicbuilding/palermo#RegionalAdministrativeCourtSicily">
+    <owl:NamedIndividual rdf:about="&impress;skos/publicbuilding/palermo#RegionalAdministrativeCourtSicily">
         <rdf:type rdf:resource="http://fp7-impress.eu/Resource/IMPRESSResource#PublicBuilding"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
