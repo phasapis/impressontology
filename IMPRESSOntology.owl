@@ -2307,6 +2307,14 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
+    <!-- http://fp7-impress.eu/IMPRESSOntology#PalermoPublicBuilding -->
+
+    <owl:NamedIndividual rdf:about="http://fp7-impress.eu/IMPRESSOntology#PalermoPublicBuilding">
+        <rdf:type rdf:resource="&skos;ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://fp7-impress.eu/IMPRESSOntology#Red -->
 
     <owl:NamedIndividual rdf:about="http://fp7-impress.eu/IMPRESSOntology#Red">
@@ -2353,6 +2361,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:NamedIndividual rdf:about="&impress;skos/publicbuilding/palermo#AdministrativeOfficesPalermoMunicipality">
         <rdf:type rdf:resource="http://fp7-impress.eu/Resource/IMPRESSResource#PublicBuilding"/>
+        <skos:inScheme rdf:resource="http://fp7-impress.eu/IMPRESSOntology#PalermoPublicBuilding"/>
     </owl:NamedIndividual>
     
 
@@ -2361,6 +2370,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:NamedIndividual rdf:about="&impress;skos/publicbuilding/palermo#NauticalInstituteGioeniTrabiaPalermo">
         <rdf:type rdf:resource="http://fp7-impress.eu/Resource/IMPRESSResource#PublicBuilding"/>
+        <skos:inScheme rdf:resource="http://fp7-impress.eu/IMPRESSOntology#PalermoPublicBuilding"/>
     </owl:NamedIndividual>
     
 
@@ -2369,6 +2379,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:NamedIndividual rdf:about="&impress;skos/publicbuilding/palermo#OfficeHeadUniversityPalermo">
         <rdf:type rdf:resource="http://fp7-impress.eu/Resource/IMPRESSResource#PublicBuilding"/>
+        <skos:inScheme rdf:resource="http://fp7-impress.eu/IMPRESSOntology#PalermoPublicBuilding"/>
     </owl:NamedIndividual>
     
 
@@ -2377,6 +2388,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:NamedIndividual rdf:about="&impress;skos/publicbuilding/palermo#RegionalAdministrativeCourtSicily">
         <rdf:type rdf:resource="http://fp7-impress.eu/Resource/IMPRESSResource#PublicBuilding"/>
+        <skos:inScheme rdf:resource="http://fp7-impress.eu/IMPRESSOntology#PalermoPublicBuilding"/>
     </owl:NamedIndividual>
     
 
